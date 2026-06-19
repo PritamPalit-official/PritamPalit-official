@@ -1,48 +1,51 @@
-<!-- Name and greeting with typing SVG -->
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=40&pause=1000&color=F7931E&center=true&vCenter=true&width=800&lines=Hi+there!+I'm+Pritam+Palit+👋;Data+Scientist+%7C+AI+Enthusiast+%7C+Problem+Solver;Welcome+to+my+GitHub+Profile!" alt="Typing SVG" />
-</h1>
+<!-- Name and greeting with glowing SVG -->
+<div align="center">
+  <img src="header.svg" width="800" alt="Pritam Palit" />
+  
+  <!-- Subtitle Typing SVG -->
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F7931E&center=true&vCenter=true&width=800&lines=Transforming+Data+into+Actionable+Insights+💡;Building+Intelligent+AI+Systems+🤖;Welcome+to+my+Interactive+Profile!+🚀" alt="Typing SVG" />
+</div>
+
+<br>
 
 <div align="center">
   <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="150" height="150" alt="Coding GIF" />
 </div>
 
 <p align="center">
-  <b>Transforming Data into Actionable Insights 💡 | Building Intelligent Systems 🤖</b>
+  <b>A Passionate Data Scientist & ML Engineer dedicated to solving complex business problems using data-driven intelligence.</b>
 </p>
 
 ---
 
-## 🛠️ Technical Skills (Hover over icons!)
+## 🛠️ Technical Skills (Hover over to scale & glow!)
 <div align="center">
-  <!-- Hovering skills using devicons with title -->
-  <a href="https://python.org" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="55" height="55"/></a>&nbsp;
-  <a href="https://pandas.pydata.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" title="Pandas" width="55" height="55"/></a>&nbsp;
-  <a href="https://numpy.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" title="NumPy" width="55" height="55"/></a>&nbsp;
-  <a href="https://scikit-learn.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-Learn" title="Scikit-Learn" width="55" height="55"/></a>&nbsp;
-  <a href="https://www.tensorflow.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" title="TensorFlow" width="55" height="55"/></a>&nbsp;
-  <a href="https://jupyter.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" title="Jupyter" width="55" height="55"/></a>&nbsp;
-  <a href="https://www.mysql.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="55" height="55"/></a>&nbsp;
-  <a href="https://git-scm.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" width="55" height="55"/></a>&nbsp;
+  <!-- Interactive Animated Skills Row SVG -->
+  <img src="skills.svg" width="800" alt="Technical Skills" />
 </div>
 
 <br>
 
-## 🧠 Soft Skills & Superpowers
+## 📊 Skills Connection Map (Interactive Chatplot)
 <div align="center">
-  <img src="https://img.shields.io/badge/Adaptiveness-FF6B6B?style=for-the-badge&logo=codeforces&logoColor=white" title="Quick to learn and adapt!" />
-  <img src="https://img.shields.io/badge/Prompting-4ECDC4?style=for-the-badge&logo=openai&logoColor=white" title="Master of AI communication!" />
-  <img src="https://img.shields.io/badge/Vibe_Coding-45B7D1?style=for-the-badge&logo=musicbrainz&logoColor=white" title="Coding in the zone!" />
-  <img src="https://img.shields.io/badge/Communication-F9CA24?style=for-the-badge&logo=wechat&logoColor=white" title="Clear and effective communication!" />
-  <img src="https://img.shields.io/badge/Problem_Solving-6AB04C?style=for-the-badge&logo=hackerrank&logoColor=white" title="Love solving puzzles!" />
+  <!-- Interactive Network Graph Chart SVG -->
+  <img src="skills-chart.svg" width="800" alt="Skills Connection Graph" />
 </div>
 
 <br>
 
-## 📊 Skills Chart & Stats
+## 🧠 Soft Skills & Superpowers (Hover to explore!)
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=PritamPalit-official&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PritamPalit-official&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" alt="Top Languages" />
+  <!-- Interactive Soft Skills Cards SVG -->
+  <img src="soft-skills.svg" width="800" alt="Soft Skills" />
+</div>
+
+<br>
+
+## 📈 GitHub Activity & Stats
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=PritamPalit-official&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="380" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PritamPalit-official&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" alt="Top Languages" width="380" />
 </div>
 
 <br>
@@ -56,11 +59,11 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=Scaler-Clustering&theme=radical&hide_border=true&bg_color=0D1117" alt="Scaler Clustering" />
   </a>
   <br>
+  <a href="https://github.com/PritamPalit-official/Movie-Recommender-System">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=Movie-Recommender-System&theme=radical&hide_border=true&bg_color=0D1117" alt="Movie Recommender System" />
+  </a>
   <a href="https://github.com/PritamPalit-official/LoanTap-Logistic-Regression">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=LoanTap-Logistic-Regression&theme=radical&hide_border=true&bg_color=0D1117" alt="LoanTap Logistic Regression" />
-  </a>
-  <a href="https://github.com/PritamPalit-official/Jamboree-Linear-Regression">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=Jamboree-Linear-Regression&theme=radical&hide_border=true&bg_color=0D1117" alt="Jamboree Linear Regression" />
   </a>
   <br>
   <a href="https://github.com/PritamPalit-official/TARGET_BUSINESS_CASE_STUDY">
