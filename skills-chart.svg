@@ -19,14 +19,14 @@
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .node-glow {
-      transition: opacity 0.3s ease;
-      opacity: 0.3;
+      transition: opacity 0.3s ease, filter 0.3s ease;
+      opacity: 0.25;
     }
     .node-group:hover {
       transform: scale(1.12);
     }
     .node-group:hover .node-glow {
-      opacity: 0.9;
+      opacity: 0.85;
     }
     .node-circle {
       stroke-width: 2;
@@ -48,7 +48,6 @@
       pointer-events: none;
     }
     
-    /* Transform origins specified in style block to keep tag structure clean */
     .node-python { transform-origin: 400px 200px; }
     .node-vibe { transform-origin: 400px 50px; }
     .node-sql { transform-origin: 550px 100px; }
@@ -57,13 +56,17 @@
     .node-stats { transform-origin: 350px 350px; }
     .node-data_viz { transform-origin: 240px 280px; }
     .node-ml { transform-origin: 250px 100px; }
-  </style>
 
-  <defs>
-    <filter id="blur-effect" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
-    </filter>
-  </defs>
+    /* CSS drop-shadow instead of SVG filter elements */
+    .glow-python { filter: drop-shadow(0px 0px 8px #3776AB); }
+    .glow-vibe { filter: drop-shadow(0px 0px 8px #FF007F); }
+    .glow-sql { filter: drop-shadow(0px 0px 8px #F39C12); }
+    .glow-feature { filter: drop-shadow(0px 0px 8px #2ECC71); }
+    .glow-prompting { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-stats { filter: drop-shadow(0px 0px 8px #1abc9c); }
+    .glow-data_viz { filter: drop-shadow(0px 0px 8px #E74C3C); }
+    .glow-ml { filter: drop-shadow(0px 0px 8px #9B59B6); }
+  </style>
 
   <rect width="800" height="400" class="background" />
   
@@ -80,8 +83,8 @@
 
   <!-- Nodes -->
   <g class="node-group node-python">
-    <!-- Outer Glow -->
-    <circle cx="400" cy="200" r="57" fill="#3776AB" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="400" cy="200" r="51" fill="#3776AB" class="node-glow glow-python" />
     <!-- Node Body -->
     <circle cx="400" cy="200" r="45" fill="#161b22" stroke="#3776AB" class="node-circle" />
     <circle cx="400" cy="200" r="40" fill="#3776AB" opacity="0.15" />
@@ -89,8 +92,8 @@
     <text x="400" y="205" text-anchor="middle" class="center-text">PYTHON</text>
   </g>
   <g class="node-group node-vibe">
-    <!-- Outer Glow -->
-    <circle cx="400" cy="50" r="44" fill="#FF007F" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="400" cy="50" r="38" fill="#FF007F" class="node-glow glow-vibe" />
     <!-- Node Body -->
     <circle cx="400" cy="50" r="32" fill="#161b22" stroke="#FF007F" class="node-circle" />
     <circle cx="400" cy="50" r="27" fill="#FF007F" opacity="0.15" />
@@ -98,8 +101,8 @@
     <text x="400" y="8" text-anchor="middle" class="label-text">Vibe Coding</text>
   </g>
   <g class="node-group node-sql">
-    <!-- Outer Glow -->
-    <circle cx="550" cy="100" r="44" fill="#F39C12" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="550" cy="100" r="38" fill="#F39C12" class="node-glow glow-sql" />
     <!-- Node Body -->
     <circle cx="550" cy="100" r="32" fill="#161b22" stroke="#F39C12" class="node-circle" />
     <circle cx="550" cy="100" r="27" fill="#F39C12" opacity="0.15" />
@@ -107,8 +110,8 @@
     <text x="550" y="58" text-anchor="middle" class="label-text">SQL & DB</text>
   </g>
   <g class="node-group node-feature">
-    <!-- Outer Glow -->
-    <circle cx="560" cy="280" r="44" fill="#2ECC71" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="560" cy="280" r="38" fill="#2ECC71" class="node-glow glow-feature" />
     <!-- Node Body -->
     <circle cx="560" cy="280" r="32" fill="#161b22" stroke="#2ECC71" class="node-circle" />
     <circle cx="560" cy="280" r="27" fill="#2ECC71" opacity="0.15" />
@@ -116,8 +119,8 @@
     <text x="560" y="332" text-anchor="middle" class="label-text">Feature Eng</text>
   </g>
   <g class="node-group node-prompting">
-    <!-- Outer Glow -->
-    <circle cx="450" cy="350" r="44" fill="#00F0FF" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="450" cy="350" r="38" fill="#00F0FF" class="node-glow glow-prompting" />
     <!-- Node Body -->
     <circle cx="450" cy="350" r="32" fill="#161b22" stroke="#00F0FF" class="node-circle" />
     <circle cx="450" cy="350" r="27" fill="#00F0FF" opacity="0.15" />
@@ -125,8 +128,8 @@
     <text x="450" y="402" text-anchor="middle" class="label-text">AI Prompting</text>
   </g>
   <g class="node-group node-stats">
-    <!-- Outer Glow -->
-    <circle cx="350" cy="350" r="44" fill="#1abc9c" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="350" cy="350" r="38" fill="#1abc9c" class="node-glow glow-stats" />
     <!-- Node Body -->
     <circle cx="350" cy="350" r="32" fill="#161b22" stroke="#1abc9c" class="node-circle" />
     <circle cx="350" cy="350" r="27" fill="#1abc9c" opacity="0.15" />
@@ -134,8 +137,8 @@
     <text x="350" y="402" text-anchor="middle" class="label-text">Statistics</text>
   </g>
   <g class="node-group node-data_viz">
-    <!-- Outer Glow -->
-    <circle cx="240" cy="280" r="44" fill="#E74C3C" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="240" cy="280" r="38" fill="#E74C3C" class="node-glow glow-data_viz" />
     <!-- Node Body -->
     <circle cx="240" cy="280" r="32" fill="#161b22" stroke="#E74C3C" class="node-circle" />
     <circle cx="240" cy="280" r="27" fill="#E74C3C" opacity="0.15" />
@@ -143,8 +146,8 @@
     <text x="240" y="332" text-anchor="middle" class="label-text">Data Viz</text>
   </g>
   <g class="node-group node-ml">
-    <!-- Outer Glow -->
-    <circle cx="250" cy="100" r="44" fill="#9B59B6" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="250" cy="100" r="38" fill="#9B59B6" class="node-glow glow-ml" />
     <!-- Node Body -->
     <circle cx="250" cy="100" r="32" fill="#161b22" stroke="#9B59B6" class="node-circle" />
     <circle cx="250" cy="100" r="27" fill="#9B59B6" opacity="0.15" />

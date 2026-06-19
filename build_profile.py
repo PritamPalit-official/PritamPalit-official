@@ -148,14 +148,14 @@ def create_skills():
 
 def create_skills_chart():
     nodes = {
-        "python": {"x": 400, "y": 200, "r": 45, "color": "#3776AB", "glow": "rgba(55,118,171,0.8)", "label": "Python"},
-        "vibe": {"x": 400, "y": 50, "r": 32, "color": "#FF007F", "glow": "rgba(255,0,127,0.8)", "label": "Vibe Coding"},
-        "sql": {"x": 550, "y": 100, "r": 32, "color": "#F39C12", "glow": "rgba(243,156,18,0.8)", "label": "SQL & DB"},
-        "feature": {"x": 560, "y": 280, "r": 32, "color": "#2ECC71", "glow": "rgba(46,204,113,0.8)", "label": "Feature Eng"},
-        "prompting": {"x": 450, "y": 350, "r": 32, "color": "#00F0FF", "glow": "rgba(0,240,255,0.8)", "label": "AI Prompting"},
-        "stats": {"x": 350, "y": 350, "r": 32, "color": "#1abc9c", "glow": "rgba(26,188,156,0.8)", "label": "Statistics"},
-        "data_viz": {"x": 240, "y": 280, "r": 32, "color": "#E74C3C", "glow": "rgba(231,76,60,0.8)", "label": "Data Viz"},
-        "ml": {"x": 250, "y": 100, "r": 32, "color": "#9B59B6", "glow": "rgba(155,89,182,0.8)", "label": "Machine Learning"}
+        "python": {"x": 400, "y": 200, "r": 45, "color": "#3776AB", "label": "Python"},
+        "vibe": {"x": 400, "y": 50, "r": 32, "color": "#FF007F", "label": "Vibe Coding"},
+        "sql": {"x": 550, "y": 100, "r": 32, "color": "#F39C12", "label": "SQL & DB"},
+        "feature": {"x": 560, "y": 280, "r": 32, "color": "#2ECC71", "label": "Feature Eng"},
+        "prompting": {"x": 450, "y": 350, "r": 32, "color": "#00F0FF", "label": "AI Prompting"},
+        "stats": {"x": 350, "y": 350, "r": 32, "color": "#1abc9c", "label": "Statistics"},
+        "data_viz": {"x": 240, "y": 280, "r": 32, "color": "#E74C3C", "label": "Data Viz"},
+        "ml": {"x": 250, "y": 100, "r": 32, "color": "#9B59B6", "label": "Machine Learning"}
     }
 
     svg_content = """<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
@@ -179,14 +179,14 @@ def create_skills_chart():
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .node-glow {
-      transition: opacity 0.3s ease;
-      opacity: 0.3;
+      transition: opacity 0.3s ease, filter 0.3s ease;
+      opacity: 0.25;
     }
     .node-group:hover {
       transform: scale(1.12);
     }
     .node-group:hover .node-glow {
-      opacity: 0.9;
+      opacity: 0.85;
     }
     .node-circle {
       stroke-width: 2;
@@ -208,7 +208,6 @@ def create_skills_chart():
       pointer-events: none;
     }
     
-    /* Transform origins specified in style block to keep tag structure clean */
     .node-python { transform-origin: 400px 200px; }
     .node-vibe { transform-origin: 400px 50px; }
     .node-sql { transform-origin: 550px 100px; }
@@ -217,13 +216,17 @@ def create_skills_chart():
     .node-stats { transform-origin: 350px 350px; }
     .node-data_viz { transform-origin: 240px 280px; }
     .node-ml { transform-origin: 250px 100px; }
-  </style>
 
-  <defs>
-    <filter id="blur-effect" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
-    </filter>
-  </defs>
+    /* CSS drop-shadow instead of SVG filter elements */
+    .glow-python { filter: drop-shadow(0px 0px 8px #3776AB); }
+    .glow-vibe { filter: drop-shadow(0px 0px 8px #FF007F); }
+    .glow-sql { filter: drop-shadow(0px 0px 8px #F39C12); }
+    .glow-feature { filter: drop-shadow(0px 0px 8px #2ECC71); }
+    .glow-prompting { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-stats { filter: drop-shadow(0px 0px 8px #1abc9c); }
+    .glow-data_viz { filter: drop-shadow(0px 0px 8px #E74C3C); }
+    .glow-ml { filter: drop-shadow(0px 0px 8px #9B59B6); }
+  </style>
 
   <rect width="800" height="400" class="background" />
   
@@ -240,11 +243,11 @@ def create_skills_chart():
     svg_content += "  </g>\n\n  <!-- Nodes -->\n"
 
     for key, val in nodes.items():
-        x, y, r, color, glow, label = val["x"], val["y"], val["r"], val["color"], val["glow"], val["label"]
+        x, y, r, color, label = val["x"], val["y"], val["r"], val["color"], val["label"]
         
         svg_content += f"""  <g class="node-group node-{key}">
-    <!-- Outer Glow -->
-    <circle cx="{x}" cy="{y}" r="{r + 12}" fill="{color}" filter="url(#blur-effect)" class="node-glow" />
+    <!-- Outer Glow (uses CSS drop-shadow) -->
+    <circle cx="{x}" cy="{y}" r="{r + 6}" fill="{color}" class="node-glow glow-{key}" />
     <!-- Node Body -->
     <circle cx="{x}" cy="{y}" r="{r}" fill="#161b22" stroke="{color}" class="node-circle" />
     <circle cx="{x}" cy="{y}" r="{r - 5}" fill="{color}" opacity="0.15" />
@@ -306,7 +309,6 @@ def create_soft_skills():
       font-size: 20px;
     }
     
-    /* Hover stroke colors and transform origins in stylesheet */
     .card-group.card-adaptiveness:hover .card-main { stroke: #2ECC71; }
     .card-group.card-prompting:hover .card-main { stroke: #00F0FF; }
     .card-group.card-vibe:hover .card-main { stroke: #FF007F; }
@@ -318,13 +320,14 @@ def create_soft_skills():
     .card-vibe { transform-origin: 400px 57.5px; }
     .card-communication { transform-origin: 555px 57.5px; }
     .card-problem { transform-origin: 710px 57.5px; }
-  </style>
 
-  <defs>
-    <filter id="soft-blur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
-    </filter>
-  </defs>
+    /* CSS drop-shadow instead of SVG filter elements */
+    .glow-adaptiveness { filter: drop-shadow(0px 0px 8px #2ECC71); }
+    .glow-prompting { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-vibe { filter: drop-shadow(0px 0px 8px #FF007F); }
+    .glow-communication { filter: drop-shadow(0px 0px 8px #F39C12); }
+    .glow-problem { filter: drop-shadow(0px 0px 8px #E74C3C); }
+  </style>
 """
 
     card_w = 135
@@ -339,7 +342,7 @@ def create_soft_skills():
         svg_content += f"""
   <g class="card-group card-{s["key"]}">
     <!-- Glow layer -->
-    <rect x="{x}" y="{y}" width="{card_w}" height="{card_h}" rx="10" ry="10" fill="{s["color"]}" filter="url(#soft-blur)" class="card-glow" />
+    <rect x="{x}" y="{y}" width="{card_w}" height="{card_h}" rx="10" ry="10" fill="{s["color"]}" class="card-glow glow-{s["key"]}" />
     <!-- Card Body -->
     <rect x="{x}" y="{y}" width="{card_w}" height="{card_h}" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
     <!-- Icon -->
