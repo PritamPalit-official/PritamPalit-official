@@ -47,7 +47,23 @@
       fill: #ffffff;
       pointer-events: none;
     }
+    
+    /* Transform origins specified in style block to keep tag structure clean */
+    .node-python { transform-origin: 400px 200px; }
+    .node-vibe { transform-origin: 400px 50px; }
+    .node-sql { transform-origin: 550px 100px; }
+    .node-feature { transform-origin: 560px 280px; }
+    .node-prompting { transform-origin: 450px 350px; }
+    .node-stats { transform-origin: 350px 350px; }
+    .node-data_viz { transform-origin: 240px 280px; }
+    .node-ml { transform-origin: 250px 100px; }
   </style>
+
+  <defs>
+    <filter id="blur-effect" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+    </filter>
+  </defs>
 
   <rect width="800" height="400" class="background" />
   
@@ -63,7 +79,7 @@
   </g>
 
   <!-- Nodes -->
-  <g class="node-group" style="transform-origin: 400px 200px;">
+  <g class="node-group node-python">
     <!-- Outer Glow -->
     <circle cx="400" cy="200" r="57" fill="#3776AB" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -72,7 +88,7 @@
     <!-- Text Label -->
     <text x="400" y="205" text-anchor="middle" class="center-text">PYTHON</text>
   </g>
-  <g class="node-group" style="transform-origin: 400px 50px;">
+  <g class="node-group node-vibe">
     <!-- Outer Glow -->
     <circle cx="400" cy="50" r="44" fill="#FF007F" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -81,7 +97,7 @@
     <!-- Text Label -->
     <text x="400" y="8" text-anchor="middle" class="label-text">Vibe Coding</text>
   </g>
-  <g class="node-group" style="transform-origin: 550px 100px;">
+  <g class="node-group node-sql">
     <!-- Outer Glow -->
     <circle cx="550" cy="100" r="44" fill="#F39C12" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -90,7 +106,7 @@
     <!-- Text Label -->
     <text x="550" y="58" text-anchor="middle" class="label-text">SQL & DB</text>
   </g>
-  <g class="node-group" style="transform-origin: 560px 280px;">
+  <g class="node-group node-feature">
     <!-- Outer Glow -->
     <circle cx="560" cy="280" r="44" fill="#2ECC71" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -99,7 +115,7 @@
     <!-- Text Label -->
     <text x="560" y="332" text-anchor="middle" class="label-text">Feature Eng</text>
   </g>
-  <g class="node-group" style="transform-origin: 450px 350px;">
+  <g class="node-group node-prompting">
     <!-- Outer Glow -->
     <circle cx="450" cy="350" r="44" fill="#00F0FF" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -108,7 +124,7 @@
     <!-- Text Label -->
     <text x="450" y="402" text-anchor="middle" class="label-text">AI Prompting</text>
   </g>
-  <g class="node-group" style="transform-origin: 350px 350px;">
+  <g class="node-group node-stats">
     <!-- Outer Glow -->
     <circle cx="350" cy="350" r="44" fill="#1abc9c" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -117,7 +133,7 @@
     <!-- Text Label -->
     <text x="350" y="402" text-anchor="middle" class="label-text">Statistics</text>
   </g>
-  <g class="node-group" style="transform-origin: 240px 280px;">
+  <g class="node-group node-data_viz">
     <!-- Outer Glow -->
     <circle cx="240" cy="280" r="44" fill="#E74C3C" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -126,7 +142,7 @@
     <!-- Text Label -->
     <text x="240" y="332" text-anchor="middle" class="label-text">Data Viz</text>
   </g>
-  <g class="node-group" style="transform-origin: 250px 100px;">
+  <g class="node-group node-ml">
     <!-- Outer Glow -->
     <circle cx="250" cy="100" r="44" fill="#9B59B6" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -135,10 +151,4 @@
     <!-- Text Label -->
     <text x="250" y="58" text-anchor="middle" class="label-text">Machine Learning</text>
   </g>
-
-  <defs>
-    <filter id="blur-effect" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-    </filter>
-  </defs>
 </svg>

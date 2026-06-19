@@ -1,9 +1,9 @@
 <!-- Name and greeting with glowing SVG -->
 <div align="center">
-  <img src="header.svg" width="800" alt="Pritam Palit" />
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/header.svg" width="800" alt="Pritam Palit" />
   
-  <!-- Subtitle Typing SVG -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F7931E&center=true&vCenter=true&width=800&lines=Transforming+Data+into+Actionable+Insights+💡;Building+Intelligent+AI+Systems+🤖;Welcome+to+my+Interactive+Profile!+🚀" alt="Typing SVG" />
+  <!-- Subtitle Typing SVG (Fully URL-encoded to support emojis and spaces) -->
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F7931E&center=true&vCenter=true&width=800&lines=Transforming%20Data%20into%20Actionable%20Insights%20%F0%9F%92%A1;Building%20Intelligent%20AI%20Systems%20%F0%9F%A4%96;Welcome%20to%20my%20Interactive%20Profile!%20%F0%9F%9A%80" alt="Typing SVG" />
 </div>
 
 <br>
@@ -21,7 +21,7 @@
 ## 🛠️ Technical Skills (Hover over to scale & glow!)
 <div align="center">
   <!-- Interactive Animated Skills Row SVG -->
-  <img src="skills.svg" width="800" alt="Technical Skills" />
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/skills.svg" width="800" alt="Technical Skills" />
 </div>
 
 <br>
@@ -29,7 +29,7 @@
 ## 📊 Skills Connection Map (Interactive Chatplot)
 <div align="center">
   <!-- Interactive Network Graph Chart SVG -->
-  <img src="skills-chart.svg" width="800" alt="Skills Connection Graph" />
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/skills-chart.svg" width="800" alt="Skills Connection Graph" />
 </div>
 
 <br>
@@ -37,7 +37,7 @@
 ## 🧠 Soft Skills & Superpowers (Hover to explore!)
 <div align="center">
   <!-- Interactive Soft Skills Cards SVG -->
-  <img src="soft-skills.svg" width="800" alt="Soft Skills" />
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/soft-skills.svg" width="800" alt="Soft Skills" />
 </div>
 
 <br>

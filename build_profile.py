@@ -2,7 +2,6 @@ import urllib.request
 import urllib.error
 import base64
 import os
-import xml.etree.ElementTree as ET
 
 # Define output path
 REPO_PATH = r"C:\Users\prita\.gemini\antigravity\scratch\PritamPalit-official"
@@ -76,7 +75,6 @@ def create_skills():
         print(f"Downloading {name} icon...")
         base64_data[name] = download_and_encode(name, url)
 
-    # 8 icons, width=800. x placement: 35.5 + i * 95.5
     svg_content = """<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
   <style>
     @keyframes fadeInUp {
@@ -149,8 +147,6 @@ def create_skills():
     print("Created skills.svg")
 
 def create_skills_chart():
-    # Center node is Python (400, 200)
-    # Surrounding nodes coordinate math
     nodes = {
         "python": {"x": 400, "y": 200, "r": 45, "color": "#3776AB", "glow": "rgba(55,118,171,0.8)", "label": "Python"},
         "vibe": {"x": 400, "y": 50, "r": 32, "color": "#FF007F", "glow": "rgba(255,0,127,0.8)", "label": "Vibe Coding"},
@@ -211,7 +207,23 @@ def create_skills_chart():
       fill: #ffffff;
       pointer-events: none;
     }
+    
+    /* Transform origins specified in style block to keep tag structure clean */
+    .node-python { transform-origin: 400px 200px; }
+    .node-vibe { transform-origin: 400px 50px; }
+    .node-sql { transform-origin: 550px 100px; }
+    .node-feature { transform-origin: 560px 280px; }
+    .node-prompting { transform-origin: 450px 350px; }
+    .node-stats { transform-origin: 350px 350px; }
+    .node-data_viz { transform-origin: 240px 280px; }
+    .node-ml { transform-origin: 250px 100px; }
   </style>
+
+  <defs>
+    <filter id="blur-effect" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+    </filter>
+  </defs>
 
   <rect width="800" height="400" class="background" />
   
@@ -219,7 +231,6 @@ def create_skills_chart():
   <g>
 """
 
-    # Draw connection lines first so they render under circles
     cx, cy = nodes["python"]["x"], nodes["python"]["y"]
     for key, val in nodes.items():
         if key == "python":
@@ -228,14 +239,10 @@ def create_skills_chart():
 
     svg_content += "  </g>\n\n  <!-- Nodes -->\n"
 
-    # Draw nodes
     for key, val in nodes.items():
         x, y, r, color, glow, label = val["x"], val["y"], val["r"], val["color"], val["glow"], val["label"]
         
-        # Center-based transform origin
-        origin = f'style="transform-origin: {x}px {y}px;"'
-        
-        svg_content += f"""  <g class="node-group" {origin}>
+        svg_content += f"""  <g class="node-group node-{key}">
     <!-- Outer Glow -->
     <circle cx="{x}" cy="{y}" r="{r + 12}" fill="{color}" filter="url(#blur-effect)" class="node-glow" />
     <!-- Node Body -->
@@ -246,18 +253,10 @@ def create_skills_chart():
         if key == "python":
             svg_content += f'    <text x="{x}" y="{y + 5}" text-anchor="middle" class="center-text">{label.upper()}</text>\n  </g>\n'
         else:
-            # Shift text slightly below or above the circle for readability
             text_y = y + r + 20 if y >= 200 else y - r - 10
             svg_content += f'    <text x="{x}" y="{text_y}" text-anchor="middle" class="label-text">{label}</text>\n  </g>\n'
 
-    # Filter definitions
-    svg_content += """
-  <defs>
-    <filter id="blur-effect" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-    </filter>
-  </defs>
-</svg>"""
+    svg_content += "</svg>"
 
     with open(os.path.join(REPO_PATH, "skills-chart.svg"), "w", encoding="utf-8") as f:
         f.write(svg_content)
@@ -265,11 +264,11 @@ def create_skills_chart():
 
 def create_soft_skills():
     skills = [
-        {"name": "Adaptiveness", "color": "#2ECC71", "desc": "Quick learner & resilient", "icon": "⚡"},
-        {"name": "Prompting", "color": "#00F0FF", "desc": "AI system orchestration", "icon": "🤖"},
-        {"name": "Vibe Coding", "color": "#FF007F", "desc": "Coding in flow state", "icon": "🎵"},
-        {"name": "Communication", "color": "#F39C12", "desc": "Clear team collaboration", "icon": "💬"},
-        {"name": "Problem Solving", "color": "#E74C3C", "desc": "Analytical debug mindset", "icon": "🔍"}
+        {"key": "adaptiveness", "name": "Adaptiveness", "color": "#2ECC71", "desc": "Quick learner & resilient", "icon": "⚡"},
+        {"key": "prompting", "name": "Prompting", "color": "#00F0FF", "desc": "AI system orchestration", "icon": "🤖"},
+        {"key": "vibe", "name": "Vibe Coding", "color": "#FF007F", "desc": "Coding in flow state", "icon": "🎵"},
+        {"key": "communication", "name": "Communication", "color": "#F39C12", "desc": "Clear team collaboration", "icon": "💬"},
+        {"key": "problem", "name": "Problem Solving", "color": "#E74C3C", "desc": "Analytical debug mindset", "icon": "🔍"}
     ]
 
     svg_content = """<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
@@ -306,11 +305,24 @@ def create_soft_skills():
     .card-icon {
       font-size: 20px;
     }
+    
+    /* Hover stroke colors and transform origins in stylesheet */
+    .card-group.card-adaptiveness:hover .card-main { stroke: #2ECC71; }
+    .card-group.card-prompting:hover .card-main { stroke: #00F0FF; }
+    .card-group.card-vibe:hover .card-main { stroke: #FF007F; }
+    .card-group.card-communication:hover .card-main { stroke: #F39C12; }
+    .card-group.card-problem:hover .card-main { stroke: #E74C3C; }
+
+    .card-adaptiveness { transform-origin: 90px 57.5px; }
+    .card-prompting { transform-origin: 245px 57.5px; }
+    .card-vibe { transform-origin: 400px 57.5px; }
+    .card-communication { transform-origin: 555px 57.5px; }
+    .card-problem { transform-origin: 710px 57.5px; }
   </style>
 
   <defs>
     <filter id="soft-blur" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
     </filter>
   </defs>
 """
@@ -318,22 +330,18 @@ def create_soft_skills():
     card_w = 135
     card_h = 75
     gap = 20
-    # 5 cards. Total width = 5 * 135 + 4 * 20 = 675 + 80 = 755. Start offset = (800 - 755) / 2 = 22.5
     start_x = 22.5
     y = 20
 
     for i, s in enumerate(skills):
         x = start_x + i * (card_w + gap)
-        center_x = x + card_w / 2
-        center_y = y + card_h / 2
-        origin = f'style="transform-origin: {center_x}px {center_y}px;"'
         
         svg_content += f"""
-  <g class="card-group" {origin}>
+  <g class="card-group card-{s["key"]}">
     <!-- Glow layer -->
     <rect x="{x}" y="{y}" width="{card_w}" height="{card_h}" rx="10" ry="10" fill="{s["color"]}" filter="url(#soft-blur)" class="card-glow" />
     <!-- Card Body -->
-    <rect x="{x}" y="{y}" width="{card_w}" height="{card_h}" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" style="stroke-hover: {s["color"]};" />
+    <rect x="{x}" y="{y}" width="{card_w}" height="{card_h}" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
     <!-- Icon -->
     <text x="{x + 15}" y="{y + 35}" class="card-icon">{s["icon"]}</text>
     <!-- Title -->
