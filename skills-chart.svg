@@ -107,7 +107,7 @@
     <circle cx="550" cy="100" r="32" fill="#161b22" stroke="#F39C12" class="node-circle" />
     <circle cx="550" cy="100" r="27" fill="#F39C12" opacity="0.15" />
     <!-- Text Label -->
-    <text x="550" y="58" text-anchor="middle" class="label-text">SQL & DB</text>
+    <text x="550" y="58" text-anchor="middle" class="label-text">SQL &amp; DB</text>
   </g>
   <g class="node-group node-feature">
     <!-- Outer Glow (uses CSS drop-shadow) -->

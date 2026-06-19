@@ -150,7 +150,7 @@ def create_skills_chart():
     nodes = {
         "python": {"x": 400, "y": 200, "r": 45, "color": "#3776AB", "label": "Python"},
         "vibe": {"x": 400, "y": 50, "r": 32, "color": "#FF007F", "label": "Vibe Coding"},
-        "sql": {"x": 550, "y": 100, "r": 32, "color": "#F39C12", "label": "SQL & DB"},
+        "sql": {"x": 550, "y": 100, "r": 32, "color": "#F39C12", "label": "SQL &amp; DB"},
         "feature": {"x": 560, "y": 280, "r": 32, "color": "#2ECC71", "label": "Feature Eng"},
         "prompting": {"x": 450, "y": 350, "r": 32, "color": "#00F0FF", "label": "AI Prompting"},
         "stats": {"x": 350, "y": 350, "r": 32, "color": "#1abc9c", "label": "Statistics"},
@@ -267,7 +267,7 @@ def create_skills_chart():
 
 def create_soft_skills():
     skills = [
-        {"key": "adaptiveness", "name": "Adaptiveness", "color": "#2ECC71", "desc": "Quick learner & resilient", "icon": "⚡"},
+        {"key": "adaptiveness", "name": "Adaptiveness", "color": "#2ECC71", "desc": "Quick learner &amp; resilient", "icon": "⚡"},
         {"key": "prompting", "name": "Prompting", "color": "#00F0FF", "desc": "AI system orchestration", "icon": "🤖"},
         {"key": "vibe", "name": "Vibe Coding", "color": "#FF007F", "desc": "Coding in flow state", "icon": "🎵"},
         {"key": "communication", "name": "Communication", "color": "#F39C12", "desc": "Clear team collaboration", "icon": "💬"},

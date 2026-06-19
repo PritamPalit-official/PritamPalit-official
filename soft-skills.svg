@@ -63,7 +63,7 @@
     <!-- Title -->
     <text x="37.5" y="72" class="card-title">Adaptiveness</text>
     <!-- Description -->
-    <text x="37.5" y="84" class="card-desc">Quick learner & resilient</text>
+    <text x="37.5" y="84" class="card-desc">Quick learner &amp; resilient</text>
   </g>
   <g class="card-group card-prompting">
     <!-- Glow layer -->
