@@ -148,17 +148,17 @@ def create_skills():
 
 def create_skills_chart():
     nodes = {
-        "python": {"x": 400, "y": 200, "r": 45, "color": "#3776AB", "label": "Python"},
-        "vibe": {"x": 400, "y": 50, "r": 32, "color": "#FF007F", "label": "Vibe Coding"},
-        "sql": {"x": 550, "y": 100, "r": 32, "color": "#F39C12", "label": "SQL &amp; DB"},
-        "feature": {"x": 560, "y": 280, "r": 32, "color": "#2ECC71", "label": "Feature Eng"},
-        "prompting": {"x": 450, "y": 350, "r": 32, "color": "#00F0FF", "label": "AI Prompting"},
-        "stats": {"x": 350, "y": 350, "r": 32, "color": "#1abc9c", "label": "Statistics"},
-        "data_viz": {"x": 240, "y": 280, "r": 32, "color": "#E74C3C", "label": "Data Viz"},
-        "ml": {"x": 250, "y": 100, "r": 32, "color": "#9B59B6", "label": "Machine Learning"}
+        "python": {"x": 400, "y": 200, "r": 45, "color": "#3776AB", "label": "Python", "icon": "🐍"},
+        "vibe": {"x": 400, "y": 55, "r": 32, "color": "#FF007F", "label": "Vibe Coding", "icon": "🎵"},
+        "sql": {"x": 550, "y": 105, "r": 32, "color": "#F39C12", "label": "SQL &amp; DB", "icon": "💾"},
+        "feature": {"x": 560, "y": 275, "r": 32, "color": "#2ECC71", "label": "Feature Eng", "icon": "⚙️"},
+        "prompting": {"x": 450, "y": 345, "r": 32, "color": "#00F0FF", "label": "AI Prompting", "icon": "🤖"},
+        "stats": {"x": 350, "y": 345, "r": 32, "color": "#1abc9c", "label": "Statistics", "icon": "📊"},
+        "data_viz": {"x": 240, "y": 275, "r": 32, "color": "#E74C3C", "label": "Data Viz", "icon": "🎨"},
+        "ml": {"x": 250, "y": 105, "r": 32, "color": "#9B59B6", "label": "Machine Learning", "icon": "🧠"}
     }
 
-    svg_content = """<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    svg_content = """<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
   <style>
     .background {
       fill: none;
@@ -209,13 +209,13 @@ def create_skills_chart():
     }
     
     .node-python { transform-origin: 400px 200px; }
-    .node-vibe { transform-origin: 400px 50px; }
-    .node-sql { transform-origin: 550px 100px; }
-    .node-feature { transform-origin: 560px 280px; }
-    .node-prompting { transform-origin: 450px 350px; }
-    .node-stats { transform-origin: 350px 350px; }
-    .node-data_viz { transform-origin: 240px 280px; }
-    .node-ml { transform-origin: 250px 100px; }
+    .node-vibe { transform-origin: 400px 55px; }
+    .node-sql { transform-origin: 550px 105px; }
+    .node-feature { transform-origin: 560px 275px; }
+    .node-prompting { transform-origin: 450px 345px; }
+    .node-stats { transform-origin: 350px 345px; }
+    .node-data_viz { transform-origin: 240px 275px; }
+    .node-ml { transform-origin: 250px 105px; }
 
     /* CSS drop-shadow instead of SVG filter elements */
     .glow-python { filter: drop-shadow(0px 0px 8px #3776AB); }
@@ -228,7 +228,7 @@ def create_skills_chart():
     .glow-ml { filter: drop-shadow(0px 0px 8px #9B59B6); }
   </style>
 
-  <rect width="800" height="400" class="background" />
+  <rect width="800" height="420" class="background" />
   
   <!-- Connections -->
   <g>
@@ -243,7 +243,7 @@ def create_skills_chart():
     svg_content += "  </g>\n\n  <!-- Nodes -->\n"
 
     for key, val in nodes.items():
-        x, y, r, color, label = val["x"], val["y"], val["r"], val["color"], val["label"]
+        x, y, r, color, label, icon = val["x"], val["y"], val["r"], val["color"], val["label"], val.get("icon", "")
         
         svg_content += f"""  <g class="node-group node-{key}">
     <!-- Outer Glow (uses CSS drop-shadow) -->
@@ -256,6 +256,7 @@ def create_skills_chart():
         if key == "python":
             svg_content += f'    <text x="{x}" y="{y + 5}" text-anchor="middle" class="center-text">{label.upper()}</text>\n  </g>\n'
         else:
+            svg_content += f'    <text x="{x}" y="{y + 8}" text-anchor="middle" font-size="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif">{icon}</text>\n'
             text_y = y + r + 20 if y >= 200 else y - r - 10
             svg_content += f'    <text x="{x}" y="{text_y}" text-anchor="middle" class="label-text">{label}</text>\n  </g>\n'
 
