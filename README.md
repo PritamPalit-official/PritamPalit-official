@@ -240,6 +240,10 @@ I build interactive analytics applications to filter, slice, and draw insights f
 
 ## ⚡ Recent Activity
 <!--START_SECTION:activity-->
+- 🌿 Created branch `main` in [PritamPalit-official/Scaler-Clustering](https://github.com/PritamPalit-official/Scaler-Clustering)
+- 🌿 Created branch `main` in [PritamPalit-official/OLA-Ensemble-Learning](https://github.com/PritamPalit-official/OLA-Ensemble-Learning)
+- 🌿 Created branch `main` in [PritamPalit-official/LoanTap-Logistic-Regression](https://github.com/PritamPalit-official/LoanTap-Logistic-Regression)
+- 🌿 Created branch `main` in [PritamPalit-official/Jamboree-Linear-Regression](https://github.com/PritamPalit-official/Jamboree-Linear-Regression)
 <!--END_SECTION:activity-->
 
 <br>

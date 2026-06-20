@@ -15,10 +15,21 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          COMMIT_MSG: "chore: Update GitHub activity feed"
-          MAX_LINES: 5
+          python-version: '3.11'
+          
+      - name: Update Activity Feed
+        run: python update_activity.py
+        
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff-index --quiet HEAD || git commit -m "chore: Update recent activity feed"
+          git push
