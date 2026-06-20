@@ -193,6 +193,32 @@ I build interactive analytics applications to filter, slice, and draw insights f
 - 🏅 **SQL for Data Science** — DataCamp
 - 🏅 **Excel for Data Analysis** — Udemy
 - 🏅 **Data Science & Machine Learning Certificate** — Scaler *(In Progress)*
+  <details>
+    <summary><b>🔍 View Scaler Skill Mastery Certificates (SQL, Python Libraries, EDA)</b></summary>
+    <br>
+    <table width="100%">
+      <tr>
+        <td width="33.3%" align="center" valign="top">
+          <h5>📊 SQL Mastery</h5>
+          <a href="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/scaler_sql.png" target="_blank">
+            <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/scaler_sql.png" width="100%" alt="Scaler SQL Mastery" />
+          </a>
+        </td>
+        <td width="33.3%" align="center" valign="top">
+          <h5>🐍 Python Libraries</h5>
+          <a href="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/scaler_python_libraries.png" target="_blank">
+            <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/scaler_python_libraries.png" width="100%" alt="Scaler Python Libraries Mastery" />
+          </a>
+        </td>
+        <td width="33.3%" align="center" valign="top">
+          <h5>📈 EDA Fundamentals</h5>
+          <a href="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/scaler_eda_fundamentals.png" target="_blank">
+            <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/scaler_eda_fundamentals.png" width="100%" alt="Scaler EDA Fundamentals Mastery" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </details>
 - 🏅 **Microsoft Power BI Data Analyst Associate (PL-300)** — Microsoft
 
 
