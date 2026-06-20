@@ -208,8 +208,8 @@ I build interactive analytics applications to filter, slice, and draw insights f
 <br>
 
 ## ⚡ Recent Activity
-<!-- START_SECTION:activity -->
-<!-- END_SECTION:activity -->
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 <br>
 
