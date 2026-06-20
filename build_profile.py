@@ -359,8 +359,61 @@ def create_soft_skills():
         f.write(svg_content)
     print("Created soft-skills.svg")
 
+def create_about_me():
+    svg_content = """<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 12px; }
+    .dot { stroke-width: 0; }
+    .dot-red { fill: #ff5f56; }
+    .dot-yellow { fill: #ffbd2e; }
+    .dot-green { fill: #27c93f; }
+    .text {
+      font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+      font-size: 14px;
+      fill: #adbac7;
+    }
+    .ln { fill: #57606a; text-anchor: end; user-select: none; }
+    .keyword { fill: #ff7b72; font-weight: bold; }
+    .class-name { fill: #d2a8ff; }
+    .function-name { fill: #79c0ff; }
+    .string { fill: #a5d6ff; }
+    .comment { fill: #8b949e; font-style: italic; }
+    .self { fill: #ff7b72; }
+    .variable { fill: #79c0ff; }
+  </style>
+  
+  <rect width="800" height="240" class="bg" />
+  
+  <circle cx="25" cy="20" r="6" class="dot dot-red" />
+  <circle cx="45" cy="20" r="6" class="dot dot-yellow" />
+  <circle cx="65" cy="20" r="6" class="dot dot-green" />
+  
+  <text x="35" y="60" class="text ln">1</text>
+  <text x="35" y="80" class="text ln">2</text>
+  <text x="35" y="100" class="text ln">3</text>
+  <text x="35" y="120" class="text ln">4</text>
+  <text x="35" y="140" class="text ln">5</text>
+  <text x="35" y="160" class="text ln">6</text>
+  <text x="35" y="180" class="text ln">7</text>
+  <text x="35" y="200" class="text ln">8</text>
+  
+  <text x="60" y="60" class="text"><tspan class="keyword">class</tspan> <tspan class="class-name">PritamPalit</tspan>:</text>
+  <text x="60" y="80" class="text">    <tspan class="keyword">def</tspan> <tspan class="function-name">__init__</tspan>(<tspan class="self">self</tspan>):</text>
+  <text x="60" y="100" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">name</tspan> = <tspan class="string">"Pritam Palit"</tspan></text>
+  <text x="60" y="120" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">role</tspan> = <tspan class="string">"Data Scientist &amp; AI Engineer"</tspan></text>
+  <text x="60" y="140" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">location</tspan> = <tspan class="string">"Bhubaneswar, India"</tspan></text>
+  <text x="60" y="160" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">focus</tspan> = [<tspan class="string">"Machine Learning"</tspan>, <tspan class="string">"Statistics"</tspan>, <tspan class="string">"Dashboards"</tspan>]</text>
+  <text x="60" y="180" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">dashboards</tspan> = [<tspan class="string">"Netflix"</tspan>, <tspan class="string">"Walmart"</tspan>, <tspan class="string">"Aerofit"</tspan>, <tspan class="string">"Yulu"</tspan>]</text>
+  <text x="60" y="200" class="text">        <tspan class="comment"># Turning data noise into actionable strategic signals...</tspan></text>
+</svg>"""
+    
+    with open(os.path.join(REPO_PATH, "about_me.svg"), "w", encoding="utf-8") as f:
+        f.write(svg_content)
+    print("Created about_me.svg")
+
 if __name__ == "__main__":
     create_header()
     create_skills()
     create_skills_chart()
     create_soft_skills()
+    create_about_me()
