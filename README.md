@@ -10,7 +10,7 @@
 
 <!-- Contact Badges -->
 <div align="center">
-  <a href="https://linkedin.com/in/pritam-palit">
+  <a href="https://www.linkedin.com/in/pritam-palit-77b2071b4/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;&nbsp;
