@@ -1,4 +1,4 @@
-<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
   <style>
     .bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 12px; }
     .dot { stroke-width: 0; }
@@ -7,7 +7,7 @@
     .dot-green { fill: #27c93f; }
     .text {
       font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
-      font-size: 14px;
+      font-size: 13px;
       fill: #adbac7;
     }
     .ln { fill: #57606a; text-anchor: end; user-select: none; }
@@ -20,7 +20,7 @@
     .variable { fill: #79c0ff; }
   </style>
   
-  <rect width="800" height="240" class="bg" />
+  <rect width="800" height="360" class="bg" />
   
   <circle cx="25" cy="20" r="6" class="dot dot-red" />
   <circle cx="45" cy="20" r="6" class="dot dot-yellow" />
@@ -34,13 +34,25 @@
   <text x="35" y="160" class="text ln">6</text>
   <text x="35" y="180" class="text ln">7</text>
   <text x="35" y="200" class="text ln">8</text>
+  <text x="35" y="220" class="text ln">9</text>
+  <text x="35" y="240" class="text ln">10</text>
+  <text x="35" y="260" class="text ln">11</text>
+  <text x="35" y="280" class="text ln">12</text>
+  <text x="35" y="300" class="text ln">13</text>
+  <text x="35" y="320" class="text ln">14</text>
   
   <text x="60" y="60" class="text"><tspan class="keyword">class</tspan> <tspan class="class-name">PritamPalit</tspan>:</text>
   <text x="60" y="80" class="text">    <tspan class="keyword">def</tspan> <tspan class="function-name">__init__</tspan>(<tspan class="self">self</tspan>):</text>
   <text x="60" y="100" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">name</tspan> = <tspan class="string">"Pritam Palit"</tspan></text>
-  <text x="60" y="120" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">role</tspan> = <tspan class="string">"Data Scientist &amp; AI Engineer"</tspan></text>
+  <text x="60" y="120" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">role</tspan> = <tspan class="string">"Data Analyst &amp; Business Analyst"</tspan></text>
   <text x="60" y="140" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">location</tspan> = <tspan class="string">"Kolkata, India"</tspan></text>
-  <text x="60" y="160" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">focus</tspan> = [<tspan class="string">"Machine Learning"</tspan>, <tspan class="string">"Statistics"</tspan>, <tspan class="string">"Dashboards"</tspan>]</text>
-  <text x="60" y="180" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">dashboards</tspan> = [<tspan class="string">"Netflix"</tspan>, <tspan class="string">"Walmart"</tspan>, <tspan class="string">"Aerofit"</tspan>, <tspan class="string">"Yulu"</tspan>]</text>
-  <text x="60" y="200" class="text">        <tspan class="comment"># Turning data noise into actionable strategic signals...</tspan></text>
+  <text x="60" y="160" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">experience</tspan> = {</text>
+  <text x="60" y="180" class="text">            <tspan class="string">"HDFC Life"</tspan>: <tspan class="string">"Sales &amp; Data Analyst Intern (Jan 24 - Aug 24)"</tspan>,</text>
+  <text x="60" y="200" class="text">            <tspan class="string">"Coding Ninjas"</tspan>: <tspan class="string">"Social Media &amp; Data Analyst Intern (Jun 22 - Dec 22)"</tspan></text>
+  <text x="60" y="220" class="text">        }</text>
+  <text x="60" y="240" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">education</tspan> = <tspan class="string">"B.Tech in Electronics &amp; Communication Eng (2020-2024)"</tspan></text>
+  <text x="60" y="260" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">certifications</tspan> = [</text>
+  <text x="60" y="280" class="text">            <tspan class="string">"Google Data Analytics"</tspan>, <tspan class="string">"PL-300 (In Progress)"</tspan>, <tspan class="string">"Scaler DSML (In Progress)"</tspan></text>
+  <text x="60" y="300" class="text">        ]</text>
+  <text x="60" y="320" class="text">        <tspan class="comment"># Turning data noise into actionable strategic signals...</tspan></text>
 </svg>

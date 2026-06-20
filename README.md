@@ -8,6 +8,23 @@
 
 <br>
 
+<!-- Contact Badges -->
+<div align="center">
+  <a href="https://linkedin.com/in/pritam-palit">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:pritampalit02@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/PritamPalit-official">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</div>
+
+<br>
+
 <!-- Mock Code Terminal Block -->
 <div align="center">
   <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/about_me.svg" width="800" alt="About Me Code Block" />
@@ -16,8 +33,22 @@
 <br>
 
 <p align="center">
-  <b>A Passionate Data Scientist & ML Engineer dedicated to solving complex business problems using data-driven intelligence and building premium business intelligence tools.</b>
+  <b>A Passionate Data Analyst & Business Analyst with hands-on experience in sales analytics, customer profiling, and statistical modeling. Dedicated to reducing operational reporting time and delivering data-driven business intelligence.</b>
 </p>
+
+---
+
+## 💼 Professional Experience
+
+#### 🏢 **Sales & Data Analyst Intern** @ **HDFC Life Insurance** *(Jan 2024 – Aug 2024)*
+- 📊 **Automated Excel KPI dashboards** using Pivot Tables and Power Query, reducing reporting cycles by **30%** and saving **5+ hours per week**.
+- 🔍 **Segmented customer transaction records (10,000+)** using SQL to identify 3 high-value lead targets, increasing qualification rates by **12%**.
+- 🛠️ **Developed self-service dashboards**, cutting ad-hoc reporting requests by **40%** for 20+ stakeholders.
+
+#### 🏢 **Social Media & Data Analyst Intern** @ **Coding Ninjas** *(Jun 2022 – Dec 2022)*
+- 📈 **Boosted audience engagement by 20%** via analytics-driven content optimization and metrics analysis.
+- 🧪 **Executed A/B test campaigns**, raising click-through rates (**CTR**) by **15%** and reducing cost-per-acquisition (**CPA**) by **10%**.
+- 📋 **Built weekly tracker reports** covering 8 key performance indicators to optimize 5 concurrent digital campaigns.
 
 ---
 
@@ -48,7 +79,7 @@
 ---
 
 ## 🎛️ Interactive Case Studies & BI Dashboards
-I have designed and implemented interactive **Streamlit** and **Plotly** analytical dashboards for several e-commerce and operations projects:
+I build interactive analytics applications to filter, slice, and draw insights from datasets:
 
 <table width="100%">
   <tr>
@@ -82,6 +113,16 @@ I have designed and implemented interactive **Streamlit** and **Plotly** analyti
 </table>
 
 <br>
+
+---
+
+## 🎓 Education & Certifications
+- 🏫 **B.Tech in Electronics & Communication Engineering** — JIS College of Engineering *(2020 – 2024)*
+- 🏅 **Google Data Analytics Professional Certificate** — Coursera
+- 🏅 **SQL for Data Science** — DataCamp
+- 🏅 **Excel for Data Analysis** — Udemy
+- 🏅 **Data Science & Machine Learning Certificate** — Scaler *(In Progress)*
+- 🏅 **Microsoft Power BI Data Analyst Associate (PL-300)** — Microsoft *(In Progress)*
 
 ---
 
