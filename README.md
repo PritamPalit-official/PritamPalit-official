@@ -93,13 +93,13 @@
 ### 📈 Business Intelligence & Visualization
 <div align="left">
   <a href="https://powerbi.microsoft.com" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/powerbi/powerbi-original.svg" alt="Power BI" width="45" height="45" style="margin-right: 15px;" />
+    <img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg" alt="Power BI" width="45" height="45" style="margin-right: 15px;" />
   </a>
   <a href="https://www.tableau.com" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/tableau/tableau-icon.svg" alt="Tableau" width="45" height="45" style="margin-right: 15px;" />
+    <img src="https://img.icons8.com/color/48/000000/tableau-software.png" alt="Tableau" width="45" height="45" style="margin-right: 15px;" />
   </a>
   <a href="https://streamlit.io" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/streamlit/streamlit-icon.svg" alt="Streamlit" width="45" height="45" style="margin-right: 15px;" />
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" alt="Streamlit" width="45" height="45" style="margin-right: 15px;" />
   </a>
 </div>
 
@@ -188,16 +188,7 @@ I build interactive analytics applications to filter, slice, and draw insights f
 - 🏅 **Data Science & Machine Learning Certificate** — Scaler *(In Progress)*
 - 🏅 **Microsoft Power BI Data Analyst Associate (PL-300)** — Microsoft
 
----
 
-## 🏆 GitHub Profile Trophies
-<div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=PritamPalit-official&theme=radical&no-bg=true&column=7" alt="GitHub Trophies" />
-  </a>
-</div>
-
-<br>
 
 ## 📈 GitHub Activity & Stats
 <div align="center">
