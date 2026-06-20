@@ -32,6 +32,13 @@
 
 <br>
 
+<!-- Dynamic Quote Card -->
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Quote of the Day" width="800" />
+</div>
+
+<br>
+
 <p align="center">
   <b>A Passionate Data Analyst & Business Analyst with hands-on experience in sales analytics, customer profiling, and statistical modeling. Dedicated to reducing operational reporting time and delivering data-driven business intelligence.</b>
 </p>
@@ -126,10 +133,32 @@ I build interactive analytics applications to filter, slice, and draw insights f
 
 ---
 
+## 🏆 GitHub Profile Trophies
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=PritamPalit-official&theme=radical&no-bg=true&column=7" alt="GitHub Trophies" />
+  </a>
+</div>
+
+<br>
+
 ## 📈 GitHub Activity & Stats
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=PritamPalit-official&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="380" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PritamPalit-official&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" alt="Top Languages" width="380" />
+</div>
+
+<br>
+
+## ⚡ Recent Activity
+<!-- START_SECTION:activity -->
+<!-- END_SECTION:activity -->
+
+<br>
+
+## 🎨 GitHub Contribution Grid (Snake Game)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
 </div>
 
 <br>
