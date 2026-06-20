@@ -148,76 +148,58 @@ def create_skills():
 
 def create_skills_chart():
     nodes = {
-        "python": {"x": 400, "y": 200, "r": 45, "color": "#3776AB", "label": "Python", "icon": "🐍"},
-        "vibe": {"x": 400, "y": 55, "r": 32, "color": "#FF007F", "label": "Vibe Coding", "icon": "🎵"},
-        "sql": {"x": 550, "y": 105, "r": 32, "color": "#F39C12", "label": "SQL &amp; DB", "icon": "💾"},
-        "feature": {"x": 560, "y": 275, "r": 32, "color": "#2ECC71", "label": "Feature Eng", "icon": "⚙️"},
-        "prompting": {"x": 450, "y": 345, "r": 32, "color": "#00F0FF", "label": "AI Prompting", "icon": "🤖"},
-        "stats": {"x": 350, "y": 345, "r": 32, "color": "#1abc9c", "label": "Statistics", "icon": "📊"},
-        "data_viz": {"x": 240, "y": 275, "r": 32, "color": "#E74C3C", "label": "Data Viz", "icon": "🎨"},
-        "ml": {"x": 250, "y": 105, "r": 32, "color": "#9B59B6", "label": "Machine Learning", "icon": "🧠"}
+        "python": {"x": 400, "y": 210, "r": 48, "color": "#3776AB", "label": "Python", "icon": "🐍"},
+        "vibe": {"x": 400, "y": 60, "r": 30, "color": "#FF007F", "label": "Vibe Coding", "icon": "🎵"},
+        "sql": {"x": 560, "y": 110, "r": 30, "color": "#F39C12", "label": "SQL & DB", "icon": "💾"},
+        "feature": {"x": 570, "y": 280, "r": 30, "color": "#2ECC71", "label": "Feature Eng", "icon": "⚙️"},
+        "prompting": {"x": 450, "y": 350, "r": 30, "color": "#00F0FF", "label": "AI Prompting", "icon": "🤖"},
+        "stats": {"x": 350, "y": 350, "r": 30, "color": "#1abc9c", "label": "Statistics", "icon": "📊"},
+        "data_viz": {"x": 230, "y": 280, "r": 30, "color": "#E74C3C", "label": "Data Viz", "icon": "🎨"},
+        "ml": {"x": 240, "y": 110, "r": 30, "color": "#9B59B6", "label": "Machine Learning", "icon": "🧠"}
     }
 
     svg_content = """<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
   <style>
     .background {
-      fill: none;
+      fill: #080d16;
+      rx: 12px;
     }
     .connection {
-      stroke-dasharray: 6, 6;
-      stroke-width: 2;
-      opacity: 0.6;
-      animation: dashflow 4s linear infinite;
-    }
-    @keyframes dashflow {
-      to {
-        stroke-dashoffset: -40;
-      }
-    }
-    .node-group {
-      cursor: pointer;
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .node-glow {
-      transition: opacity 0.3s ease, filter 0.3s ease;
+      stroke-width: 1.5;
       opacity: 0.25;
     }
-    .node-group:hover {
-      transform: scale(1.12);
+    .radar-ring {
+      fill: none;
+      stroke: #30363d;
+      stroke-width: 1;
+      opacity: 0.3;
     }
-    .node-group:hover .node-glow {
-      opacity: 0.85;
-    }
-    .node-circle {
-      stroke-width: 2;
-      stroke: #fff;
+    .radar-axis {
+      stroke: #30363d;
+      stroke-width: 1;
+      stroke-dasharray: 4, 8;
+      opacity: 0.2;
     }
     .label-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      font-size: 13px;
+      font-weight: 800;
+      font-size: 12px;
       fill: #adbac7;
+      letter-spacing: 0.5px;
       text-shadow: 0 2px 4px rgba(0,0,0,0.8);
       pointer-events: none;
     }
     .center-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 900;
-      font-size: 15px;
+      font-size: 14px;
       fill: #ffffff;
+      letter-spacing: 1px;
       pointer-events: none;
     }
-    
-    .node-python { transform-origin: 400px 200px; }
-    .node-vibe { transform-origin: 400px 55px; }
-    .node-sql { transform-origin: 550px 105px; }
-    .node-feature { transform-origin: 560px 275px; }
-    .node-prompting { transform-origin: 450px 345px; }
-    .node-stats { transform-origin: 350px 345px; }
-    .node-data_viz { transform-origin: 240px 275px; }
-    .node-ml { transform-origin: 250px 105px; }
-
-    /* CSS drop-shadow instead of SVG filter elements */
+    .node-group {
+      cursor: pointer;
+    }
     .glow-python { filter: drop-shadow(0px 0px 8px #3776AB); }
     .glow-vibe { filter: drop-shadow(0px 0px 8px #FF007F); }
     .glow-sql { filter: drop-shadow(0px 0px 8px #F39C12); }
@@ -228,36 +210,88 @@ def create_skills_chart():
     .glow-ml { filter: drop-shadow(0px 0px 8px #9B59B6); }
   </style>
 
-  <rect width="800" height="420" class="background" />
-  
-  <!-- Connections -->
+  <!-- Background Card -->
+  <rect width="800" height="420" class="background" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Radar Grid Background -->
+  <g>
+    <circle cx="400" cy="210" r="90" class="radar-ring" />
+    <circle cx="400" cy="210" r="170" class="radar-ring" stroke-dasharray="4, 4" />
+    <circle cx="400" cy="210" r="250" class="radar-ring" opacity="0.15" />
+    <line x1="80" y1="210" x2="720" y2="210" class="radar-axis" />
+    <line x1="400" y1="40" x2="400" y2="380" class="radar-axis" />
+  </g>
+
+  <!-- Connection Lines -->
   <g>
 """
 
     cx, cy = nodes["python"]["x"], nodes["python"]["y"]
+    # Write connection lines
     for key, val in nodes.items():
         if key == "python":
             continue
         svg_content += f'    <line x1="{cx}" y1="{cy}" x2="{val["x"]}" y2="{val["y"]}" stroke="{val["color"]}" class="connection" />\n'
 
-    svg_content += "  </g>\n\n  <!-- Nodes -->\n"
+    svg_content += "  </g>\n\n  <!-- Animated Data Packets -->\n  <g>\n"
+    # Write animated data packets
+    for key, val in nodes.items():
+        if key == "python":
+            continue
+        x, y, color = val["x"], val["y"], val["color"]
+        # Packet 1
+        svg_content += f"""    <circle r="3" fill="{color}" opacity="0.8">
+      <animate attributeName="cx" from="{cx}" to="{x}" dur="2.5s" begin="0s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="{cy}" to="{y}" dur="2.5s" begin="0s" repeatCount="indefinite" />
+    </circle>"""
+        # Packet 2
+        svg_content += f"""
+    <circle r="3" fill="{color}" opacity="0.8">
+      <animate attributeName="cx" from="{cx}" to="{x}" dur="2.5s" begin="1.25s" repeatCount="indefinite" />
+      <animate attributeName="cy" from="{cy}" to="{y}" dur="2.5s" begin="1.25s" repeatCount="indefinite" />
+    </circle>\n"""
 
+    svg_content += "  </g>\n\n  <!-- Skill Nodes -->\n"
+
+    # Write nodes
     for key, val in nodes.items():
         x, y, r, color, label, icon = val["x"], val["y"], val["r"], val["color"], val["label"], val.get("icon", "")
         
-        svg_content += f"""  <g class="node-group node-{key}">
-    <!-- Outer Glow (uses CSS drop-shadow) -->
-    <circle cx="{x}" cy="{y}" r="{r + 6}" fill="{color}" class="node-glow glow-{key}" />
-    <!-- Node Body -->
-    <circle cx="{x}" cy="{y}" r="{r}" fill="#161b22" stroke="{color}" class="node-circle" />
-    <circle cx="{x}" cy="{y}" r="{r - 5}" fill="{color}" opacity="0.15" />
-    <!-- Text Label -->
+        svg_content += f"""  <!-- Node: {label} -->
+  <g class="node-group">
 """
         if key == "python":
-            svg_content += f'    <text x="{x}" y="{y + 5}" text-anchor="middle" class="center-text">{label.upper()}</text>\n  </g>\n'
+            # Central Node visual styling
+            svg_content += f"""    <!-- Outer rotating scanner ring -->
+    <circle cx="{x}" cy="{y}" r="58" fill="none" stroke="{color}" stroke-dasharray="10, 5" stroke-width="1.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 {x} {y}" to="360 {x} {y}" dur="20s" repeatCount="indefinite" />
+    </circle>
+    <!-- Node Body -->
+    <circle cx="{x}" cy="{y}" r="{r + 5}" fill="{color}" opacity="0.25" class="glow-python" />
+    <circle cx="{x}" cy="{y}" r="{r}" fill="#0d1117" stroke="{color}" stroke-width="2.5" />
+    <text x="{x}" y="{y + 5}" text-anchor="middle" class="center-text">{label.upper()}</text>
+  </g>
+"""
         else:
-            svg_content += f'    <text x="{x}" y="{y + 8}" text-anchor="middle" font-size="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif">{icon}</text>\n'
-            text_y = y + r + 20 if y >= 200 else y - r - 10
+            # HUD corner brackets for outer nodes
+            svg_content += f"""    <!-- HUD brackets -->
+    <path d="M {x-22} {y-30} L {x-30} {y-30} L {x-30} {y-22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
+    <path d="M {x+22} {y-30} L {x+30} {y-30} L {x+30} {y-22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
+    <path d="M {x-22} {y+30} L {x-30} {y+30} L {x-30} {y+22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
+    <path d="M {x+22} {y+30} L {x+30} {y+30} L {x+30} {y+22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
+    <!-- Rotating dash ring -->
+    <circle cx="{x}" cy="{y}" r="35" fill="none" stroke="{color}" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="0 {x} {y}" to="-360 {x} {y}" dur="12s" repeatCount="indefinite" />
+    </circle>
+    <!-- Node Body -->
+    <circle cx="{x}" cy="{y}" r="{r + 3}" fill="{color}" opacity="0.15" class="glow-{key}" />
+    <circle cx="{x}" cy="{y}" r="{r}" fill="#0d1117" stroke="{color}" stroke-width="1.5" />
+    <circle cx="{x}" cy="{y}" r="{r - 4}" fill="{color}" opacity="0.08" />
+    <!-- Icon Inside circle -->
+    <text x="{x}" y="{y + 7}" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">{icon}</text>
+    <!-- Label -->
+"""
+            text_y = y + r + 22 if y >= 210 else y - r - 12
             svg_content += f'    <text x="{x}" y="{text_y}" text-anchor="middle" class="label-text">{label}</text>\n  </g>\n'
 
     svg_content += "</svg>"
