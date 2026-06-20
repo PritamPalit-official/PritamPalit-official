@@ -59,10 +59,67 @@
 
 ---
 
-## 🛠️ Technical Skills (Hover to glow!)
-<div align="center">
-  <!-- Interactive Animated Skills Row SVG -->
-  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/skills.svg" width="800" alt="Technical Skills" />
+## 🛠️ Technical Skills & Tool Stack
+
+### 💻 Languages & Querying
+<div align="left">
+  <a href="https://www.python.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://www.mysql.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="MySQL" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://learn.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-core-concepts" target="_blank" rel="noreferrer">
+    <img src="https://img.icons8.com/color/48/000000/microsoft-excel-2019.png" alt="Excel" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+</div>
+
+### 📊 Data Science & Machine Learning
+<div align="left">
+  <a href="https://pandas.pydata.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="Pandas" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://numpy.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="NumPy" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://scikit-learn.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+</div>
+
+### 📈 Business Intelligence & Visualization
+<div align="left">
+  <a href="https://powerbi.microsoft.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/powerbi/powerbi-original.svg" alt="Power BI" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://www.tableau.com" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/tableau/tableau-icon.svg" alt="Tableau" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://streamlit.io" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/streamlit/streamlit-icon.svg" alt="Streamlit" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+</div>
+
+### 🛠️ Developer Tools & Cloud
+<div align="left">
+  <a href="https://git-scm.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://github.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub" width="45" height="45" style="margin-right: 15px; filter: invert(1);" />
+  </a>
+  <a href="https://code.visualstudio.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="VS Code" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://jupyter.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jupyter/jupyter-original.svg" alt="Jupyter" width="45" height="45" style="margin-right: 15px;" />
+  </a>
+  <a href="https://cloud.google.com/bigquery" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/google_bigquery/google_bigquery-icon.svg" alt="Google BigQuery" width="45" height="45" style="margin-right: 15px;" />
+  </a>
 </div>
 
 <br>
