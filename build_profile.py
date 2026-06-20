@@ -414,7 +414,7 @@ def create_about_me():
   <text x="60" y="220" class="text">        }</text>
   <text x="60" y="240" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">education</tspan> = <tspan class="string">"B.Tech in Electronics &amp; Communication Eng (2020-2024)"</tspan></text>
   <text x="60" y="260" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">certifications</tspan> = [</text>
-  <text x="60" y="280" class="text">            <tspan class="string">"Google Data Analytics"</tspan>, <tspan class="string">"PL-300 (In Progress)"</tspan>, <tspan class="string">"Scaler DSML (In Progress)"</tspan></text>
+  <text x="60" y="280" class="text">            <tspan class="string">"Google Data Analytics"</tspan>, <tspan class="string">"Microsoft Power BI (PL-300)"</tspan>, <tspan class="string">"Scaler DSML (In Progress)"</tspan></text>
   <text x="60" y="300" class="text">        ]</text>
   <text x="60" y="320" class="text">        <tspan class="comment"># Turning data noise into actionable strategic signals...</tspan></text>
 </svg>"""

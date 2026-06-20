@@ -122,7 +122,7 @@ I build interactive analytics applications to filter, slice, and draw insights f
 - 🏅 **SQL for Data Science** — DataCamp
 - 🏅 **Excel for Data Analysis** — Udemy
 - 🏅 **Data Science & Machine Learning Certificate** — Scaler *(In Progress)*
-- 🏅 **Microsoft Power BI Data Analyst Associate (PL-300)** — Microsoft *(In Progress)*
+- 🏅 **Microsoft Power BI Data Analyst Associate (PL-300)** — Microsoft
 
 ---
 
