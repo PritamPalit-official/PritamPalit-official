@@ -93,13 +93,13 @@
 ### 📈 Business Intelligence & Visualization
 <div align="left">
   <a href="https://powerbi.microsoft.com" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg" alt="Power BI" width="45" height="45" style="margin-right: 15px;" />
+    <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/powerbi.svg" alt="Power BI" width="45" height="45" style="margin-right: 15px;" />
   </a>
   <a href="https://www.tableau.com" target="_blank" rel="noreferrer">
-    <img src="https://img.icons8.com/color/48/000000/tableau-software.png" alt="Tableau" width="45" height="45" style="margin-right: 15px;" />
+    <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/tableau.svg" alt="Tableau" width="45" height="45" style="margin-right: 15px;" />
   </a>
   <a href="https://streamlit.io" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" alt="Streamlit" width="45" height="45" style="margin-right: 15px;" />
+    <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/streamlit.svg" alt="Streamlit" width="45" height="45" style="margin-right: 15px;" />
   </a>
 </div>
 
@@ -180,6 +180,13 @@ I build interactive analytics applications to filter, slice, and draw insights f
 
 ---
 
+## 🏅 Verifiable Professional Credentials
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/pl300_badge.svg" width="800" alt="Microsoft PL-300 Certification" />
+</div>
+
+<br>
+
 ## 🎓 Education & Certifications
 - 🏫 **B.Tech in Electronics & Communication Engineering** — JIS College of Engineering *(2020 – 2024)*
 - 🏅 **Google Data Analytics Professional Certificate** — Coursera
@@ -189,6 +196,13 @@ I build interactive analytics applications to filter, slice, and draw insights f
 - 🏅 **Microsoft Power BI Data Analyst Associate (PL-300)** — Microsoft
 
 
+
+## 🎵 My Coding Vibe (Currently Listening to)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/spotify_vibe.svg" width="800" alt="My Coding Vibe" />
+</div>
+
+<br>
 
 ## 📈 GitHub Activity & Stats
 <div align="center">

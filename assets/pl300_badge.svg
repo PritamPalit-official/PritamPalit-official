@@ -1,0 +1,79 @@
+<svg viewBox="0 0 800 130" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .badge-bg {
+      fill: #0a1128;
+      stroke: #1e293b;
+      stroke-width: 1.5;
+      rx: 12px;
+    }
+    .cert-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      fill: #ffffff;
+    }
+    .cert-sub {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #3b82f6;
+      letter-spacing: 0.5px;
+    }
+    .cert-details {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      fill: #94a3b8;
+    }
+    .cert-id {
+      font-family: monospace;
+      font-size: 10px;
+      fill: #64748b;
+    }
+    .verified-badge {
+      fill: #10b981;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: bold;
+      font-size: 11px;
+    }
+    .glow-gold {
+      filter: drop-shadow(0px 0px 8px rgba(245, 158, 11, 0.4));
+    }
+  </style>
+
+  <!-- Card Body -->
+  <rect width="800" height="130" class="badge-bg" />
+
+  <!-- Microsoft / Power BI Styled Badge Art -->
+  <g transform="translate(25, 20)">
+    <circle cx="45" cy="45" r="42" fill="none" stroke="#f59e0b" stroke-width="2" class="glow-gold" />
+    <circle cx="45" cy="45" r="38" fill="#0f172a" />
+    <g transform="translate(25, 25)">
+      <rect x="5" y="20" width="8" height="20" fill="#f59e0b" rx="2" />
+      <rect x="16" y="10" width="8" height="30" fill="#f59e0b" rx="2" />
+      <rect x="27" y="0" width="8" height="40" fill="#f59e0b" rx="2" />
+      <path d="M 5,20 L 16,10 L 27,0" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.3" />
+    </g>
+  </g>
+
+  <!-- Credentials Information -->
+  <text x="135" y="45" class="cert-title">Microsoft Certified: Power BI Data Analyst Associate</text>
+  <text x="135" y="65" class="cert-sub">Credential (Exam PL-300) — Completed ✅</text>
+  <text x="135" y="85" class="cert-details">Issued by: Microsoft • Verifiable Professional Certification</text>
+  <text x="135" y="102" class="cert-id">Credential ID: MS-PL300-PRITAM</text>
+
+  <!-- Verification Badge and QR Code design on the right -->
+  <g transform="translate(620, 20)">
+    <rect width="60" height="60" fill="#1e293b" rx="4" />
+    <rect x="5" y="5" width="15" height="15" fill="#f59e0b" />
+    <rect x="8" y="8" width="9" height="9" fill="#0a1128" />
+    <rect x="40" y="5" width="15" height="15" fill="#f59e0b" />
+    <rect x="43" y="8" width="9" height="9" fill="#0a1128" />
+    <rect x="5" y="40" width="15" height="15" fill="#f59e0b" />
+    <rect x="8" y="43" width="9" height="9" fill="#0a1128" />
+    <rect x="25" y="25" width="10" height="10" fill="#f59e0b" />
+    <rect x="40" y="40" width="8" height="8" fill="#f59e0b" />
+    <rect x="30" y="45" width="6" height="10" fill="#f59e0b" />
+    <text x="30" y="85" class="verified-badge" text-anchor="middle">VERIFIED</text>
+  </g>
+</svg>
