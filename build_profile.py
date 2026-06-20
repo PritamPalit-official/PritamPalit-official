@@ -401,7 +401,7 @@ def create_about_me():
   <text x="60" y="80" class="text">    <tspan class="keyword">def</tspan> <tspan class="function-name">__init__</tspan>(<tspan class="self">self</tspan>):</text>
   <text x="60" y="100" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">name</tspan> = <tspan class="string">"Pritam Palit"</tspan></text>
   <text x="60" y="120" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">role</tspan> = <tspan class="string">"Data Scientist &amp; AI Engineer"</tspan></text>
-  <text x="60" y="140" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">location</tspan> = <tspan class="string">"Bhubaneswar, India"</tspan></text>
+  <text x="60" y="140" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">location</tspan> = <tspan class="string">"Kolkata, India"</tspan></text>
   <text x="60" y="160" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">focus</tspan> = [<tspan class="string">"Machine Learning"</tspan>, <tspan class="string">"Statistics"</tspan>, <tspan class="string">"Dashboards"</tspan>]</text>
   <text x="60" y="180" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">dashboards</tspan> = [<tspan class="string">"Netflix"</tspan>, <tspan class="string">"Walmart"</tspan>, <tspan class="string">"Aerofit"</tspan>, <tspan class="string">"Yulu"</tspan>]</text>
   <text x="60" y="200" class="text">        <tspan class="comment"># Turning data noise into actionable strategic signals...</tspan></text>
