@@ -21,37 +21,113 @@ def download_and_encode(name, url):
         return ""
 
 def create_header():
-    svg_content = """<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+    svg_content = """<svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
   <style>
+    .background { fill: #080d16; rx: 12px; }
+    .border { stroke: #30363d; stroke-width: 1.5; fill: none; rx: 12px; }
     .title {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-weight: 900;
-      font-size: 54px;
-      fill: url(#gradient-fill);
-      letter-spacing: 5px;
-      text-shadow: 0px 0px 20px rgba(0, 240, 255, 0.4);
+      font-size: 38px;
+      fill: #ffffff;
+      letter-spacing: 6px;
+      text-shadow: 0px 0px 15px rgba(0, 240, 255, 0.5);
     }
     .subtitle {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 600;
-      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 11px;
       fill: #8b949e;
-      letter-spacing: 4px;
+      letter-spacing: 3px;
       opacity: 0.8;
     }
+    .hud-text {
+      font-family: monospace;
+      font-size: 10px;
+      fill: #58a6ff;
+    }
+    .pulse-dot {
+      fill: #238636;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
   </style>
+
+  <rect width="800" height="160" class="background" />
+  
+  <!-- Radar Sweep -->
+  <g transform="translate(60, 80)">
+    <circle r="40" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.15" />
+    <circle r="25" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.15" />
+    <circle r="10" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.1" />
+    <line x1="-40" y1="0" x2="40" y2="0" stroke="#58a6ff" stroke-width="0.5" opacity="0.1" />
+    <line x1="0" y1="-40" x2="0" y2="40" stroke="#58a6ff" stroke-width="0.5" opacity="0.1" />
+    <line x1="0" y1="0" x2="28" y2="-28" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite" />
+    </line>
+  </g>
+  <text x="60" y="142" class="hud-text" text-anchor="middle">[ SCANNING ]</text>
+
+  <!-- Coordinates & Info (Left Panel) -->
+  <text x="140" y="50" class="hud-text">SYS_LOC: KOLKATA, IN</text>
+  <text x="140" y="70" class="hud-text">LAT_N : 22.5726°</text>
+  <text x="140" y="90" class="hud-text">LON_E : 88.3639°</text>
+
+  <!-- Center Title & Subtitle -->
+  <text x="400" y="75" text-anchor="middle" class="title">PRITAM PALIT</text>
+  <text x="400" y="105" text-anchor="middle" class="subtitle">DATA SCIENTIST • AI ENGINEER • VIBE CODER</text>
+
+  <!-- Status indicators (Right Panel) -->
+  <g transform="translate(620, 40)">
+    <!-- Resource bars -->
+    <text x="0" y="10" class="hud-text">DATA_ANALYTICS: 90%</text>
+    <rect x="0" y="15" width="120" height="4" fill="#30363d" rx="2" />
+    <rect x="0" y="15" width="108" height="4" fill="#58a6ff" rx="2" />
+    
+    <text x="0" y="32" class="hud-text">AI_PROMPTING  : 100%</text>
+    <rect x="0" y="37" width="120" height="4" fill="#30363d" rx="2" />
+    <rect x="0" y="37" width="120" height="4" fill="#58a6ff" rx="2" />
+
+    <text x="0" y="54" class="hud-text">VIBE_CODING   : 100%</text>
+    <rect x="0" y="59" width="120" height="4" fill="#30363d" rx="2" />
+    <rect x="0" y="59" width="120" height="4" fill="#ff007f" rx="2" />
+  </g>
+  
+  <!-- Glowing Pulse dot and Status -->
+  <g transform="translate(755, 30)">
+    <circle cx="0" cy="0" r="5" class="pulse-dot" />
+    <circle cx="0" cy="0" r="8" fill="none" stroke="#238636" stroke-width="1" opacity="0.5">
+      <animate attributeName="r" from="5" to="12" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.5" to="0" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <text x="740" y="33" class="hud-text" text-anchor="end">SYS_ACTIVE</text>
+  
+  <!-- HUD Corner Brackets -->
+  <path d="M 10 20 L 20 20 M 10 20 L 10 30" stroke="#30363d" stroke-width="1.5" fill="none" />
+  <path d="M 790 20 L 780 20 M 790 20 L 790 30" stroke="#30363d" stroke-width="1.5" fill="none" />
+  <path d="M 10 140 L 20 140 M 10 140 L 10 130" stroke="#30363d" stroke-width="1.5" fill="none" />
+  <path d="M 790 140 L 780 140 M 790 140 L 790 130" stroke="#30363d" stroke-width="1.5" fill="none" />
+
+  <!-- Stripe-Style Reflection Sweep -->
   <defs>
-    <linearGradient id="gradient-fill" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%">
-        <animate attributeName="stop-color" values="#ff007f;#7f00ff;#00f0ff;#ff007f" dur="8s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%">
-        <animate attributeName="stop-color" values="#00f0ff;#ff007f;#7f00ff;#00f0ff" dur="8s" repeatCount="indefinite" />
-      </stop>
+    <linearGradient id="header-sweep" x1="0%" y1="0%" x2="30%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <text x="50%" y="65" text-anchor="middle" class="title">PRITAM PALIT</text>
-  <text x="50%" y="100" text-anchor="middle" class="subtitle">DATA SCIENTIST • AI ENGINEER • VIBE CODER</text>
+  <rect width="800" height="160" fill="url(#header-sweep)" pointer-events="none" rx="12">
+    <animate attributeName="x" from="-800" to="800" dur="8s" repeatCount="indefinite" />
+  </rect>
+
+  <rect width="800" height="160" class="border" />
 </svg>"""
     
     with open(os.path.join(REPO_PATH, "header.svg"), "w", encoding="utf-8") as f:
@@ -150,7 +226,7 @@ def create_skills_chart():
     nodes = {
         "python": {"x": 400, "y": 210, "r": 48, "color": "#3776AB", "label": "Python", "icon": "🐍"},
         "vibe": {"x": 400, "y": 60, "r": 30, "color": "#FF007F", "label": "Vibe Coding", "icon": "🎵"},
-        "sql": {"x": 560, "y": 110, "r": 30, "color": "#F39C12", "label": "SQL & DB", "icon": "💾"},
+        "sql": {"x": 560, "y": 110, "r": 30, "color": "#F39C12", "label": "SQL &amp; DB", "icon": "💾"},
         "feature": {"x": 570, "y": 280, "r": 30, "color": "#2ECC71", "label": "Feature Eng", "icon": "⚙️"},
         "prompting": {"x": 450, "y": 350, "r": 30, "color": "#00F0FF", "label": "AI Prompting", "icon": "🤖"},
         "stats": {"x": 350, "y": 350, "r": 30, "color": "#1abc9c", "label": "Statistics", "icon": "📊"},
@@ -254,6 +330,16 @@ def create_skills_chart():
     svg_content += "  </g>\n\n  <!-- Skill Nodes -->\n"
 
     # Write nodes
+    satellites = {
+        "vibe": 4.0,
+        "sql": 5.5,
+        "feature": 3.2,
+        "prompting": 6.8,
+        "stats": 4.5,
+        "data_viz": 5.0,
+        "ml": 3.8
+    }
+
     for key, val in nodes.items():
         x, y, r, color, label, icon = val["x"], val["y"], val["r"], val["color"], val["label"], val.get("icon", "")
         
@@ -273,6 +359,7 @@ def create_skills_chart():
   </g>
 """
         else:
+            sat_dur = satellites.get(key, 4.0)
             # HUD corner brackets for outer nodes
             svg_content += f"""    <!-- HUD brackets -->
     <path d="M {x-22} {y-30} L {x-30} {y-30} L {x-30} {y-22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
@@ -283,6 +370,13 @@ def create_skills_chart():
     <circle cx="{x}" cy="{y}" r="35" fill="none" stroke="{color}" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
       <animateTransform attributeName="transform" type="rotate" from="0 {x} {y}" to="-360 {x} {y}" dur="12s" repeatCount="indefinite" />
     </circle>
+    <!-- Orbiting Satellite Moon -->
+    <g transform="translate({x}, {y})">
+      <circle cx="0" cy="0" r="42" fill="none" stroke="{color}" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
+      <circle cx="42" cy="0" r="3.5" fill="{color}" filter="url(#glow-{key})">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="{sat_dur}s" repeatCount="indefinite" />
+      </circle>
+    </g>
     <!-- Node Body -->
     <circle cx="{x}" cy="{y}" r="{r + 3}" fill="{color}" opacity="0.15" class="glow-{key}" />
     <circle cx="{x}" cy="{y}" r="{r}" fill="#0d1117" stroke="{color}" stroke-width="1.5" />
@@ -294,7 +388,21 @@ def create_skills_chart():
             text_y = y + r + 22 if y >= 210 else y - r - 12
             svg_content += f'    <text x="{x}" y="{text_y}" text-anchor="middle" class="label-text">{label}</text>\n  </g>\n'
 
-    svg_content += "</svg>"
+    svg_content += """
+  <!-- Stripe-Style Reflection Sweep -->
+  <defs>
+    <linearGradient id="radar-sweep" x1="0%" y1="0%" x2="30%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.06" />
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#radar-sweep)" pointer-events="none" rx="12">
+    <animate attributeName="x" from="-800" to="800" dur="10s" repeatCount="indefinite" />
+  </rect>
+</svg>"""
 
     with open(os.path.join(REPO_PATH, "skills-chart.svg"), "w", encoding="utf-8") as f:
         f.write(svg_content)
@@ -452,6 +560,18 @@ def create_about_me():
   <text x="60" y="280" class="text">            <tspan class="string">"Google Data Analytics"</tspan>, <tspan class="string">"Microsoft Power BI (PL-300)"</tspan>, <tspan class="string">"Scaler DSML (In Progress)"</tspan></text>
   <text x="60" y="300" class="text">        ]</text>
   <text x="60" y="320" class="text">        <tspan class="comment"># Turning data noise into actionable strategic signals...</tspan></text>
+  <defs>
+    <linearGradient id="about-sweep" x1="0%" y1="0%" x2="30%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="360" fill="url(#about-sweep)" pointer-events="none" rx="12">
+    <animate attributeName="x" from="-800" to="800" dur="9s" repeatCount="indefinite" />
+  </rect>
 </svg>"""
     
     with open(os.path.join(REPO_PATH, "about_me.svg"), "w", encoding="utf-8") as f:

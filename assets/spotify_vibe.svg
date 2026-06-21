@@ -49,7 +49,7 @@
     }
     @keyframes equalize {
       0% { height: 4px; y: 63px; }
-      50% { height: 16px; y: 51px; }
+      50% { height: 18px; y: 49px; }
       100% { height: 4px; y: 63px; }
     }
     .bar {
@@ -66,13 +66,25 @@
   <!-- Card Body -->
   <rect width="800" height="130" class="card-bg" />
 
-  <!-- Album Art cover graphics -->
+  <!-- Album Art with spinning vinyl disk -->
   <g transform="translate(25, 20)">
+    <!-- Outer sleeve jacket -->
     <rect width="90" height="90" rx="8" fill="#181818" stroke="#282828" stroke-width="1" />
-    <circle cx="45" cy="45" r="38" fill="#0c0c0c" stroke="#1c1c1c" stroke-width="2" />
-    <circle cx="45" cy="45" r="25" fill="none" stroke="#2c2c2c" stroke-dasharray="3, 3" />
-    <rect x="15" y="15" width="60" height="60" rx="4" fill="url(#album-grad)" />
-    <text x="45" y="52" font-family="monospace" font-weight="900" font-size="28" fill="#ffffff" text-anchor="middle">&lt;/&gt;</text>
+    
+    <!-- Spinning Vinyl record -->
+    <g>
+      <circle cx="45" cy="45" r="41" fill="#0d1117" stroke="#1c1c1c" stroke-width="1.5" />
+      <circle cx="45" cy="45" r="38" fill="none" stroke="#21262d" stroke-dasharray="6, 4" stroke-width="0.8" />
+      <circle cx="45" cy="45" r="32" fill="none" stroke="#30363d" stroke-dasharray="4, 2" stroke-width="0.8" />
+      <circle cx="45" cy="45" r="26" fill="none" stroke="#21262d" stroke-dasharray="8, 3" stroke-width="0.6" />
+      <!-- Center record label -->
+      <circle cx="45" cy="45" r="16" fill="url(#album-grad)" />
+      <!-- Center code logo -->
+      <text x="45" y="49" font-family="monospace" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle">&lt;/&gt;</text>
+      <!-- Spindle hole -->
+      <circle cx="45" cy="45" r="3" fill="#0d1117" />
+      <animateTransform attributeName="transform" type="rotate" from="0 45 45" to="360 45 45" dur="8s" repeatCount="indefinite" />
+    </g>
   </g>
 
   <!-- Gradients -->
@@ -95,6 +107,20 @@
   <text x="165" y="48" class="track-title">Lo-Fi Coding Session ☕</text>
   <text x="165" y="68" class="artist">Pritam Palit <tspan fill="#6b7280" font-weight="normal">• Vibe Coding</tspan></text>
   <text x="165" y="88" class="playlist">Playing from playlist: "Late Night Deep Focus" 🎧</text>
+
+  <!-- Animated Floating Music Notes -->
+  <g font-family="sans-serif" font-size="14" fill="#1db954" opacity="0">
+    <text x="120" y="40">🎵
+      <animate attributeName="y" from="40" to="15" dur="4s" begin="0s" repeatCount="indefinite" />
+      <animate attributeName="x" from="120" to="140" dur="4s" begin="0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.8; 0" keyTimes="0; 0.3; 1" dur="4s" begin="0s" repeatCount="indefinite" />
+    </text>
+    <text x="125" y="60">🎶
+      <animate attributeName="y" from="60" to="30" dur="4s" begin="2s" repeatCount="indefinite" />
+      <animate attributeName="x" from="125" to="150" dur="4s" begin="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.8; 0" keyTimes="0; 0.3; 1" dur="4s" begin="2s" repeatCount="indefinite" />
+    </text>
+  </g>
 
   <!-- Playback Control Icons -->
   <g transform="translate(560, 30)">
@@ -129,4 +155,18 @@
     <circle cx="415" cy="0" r="5" fill="#ffffff" class="glow" />
     <text x="580" y="5" class="time">03:50</text>
   </g>
+
+  <!-- Stripe-Style Reflection Sweep -->
+  <defs>
+    <linearGradient id="spotify-sweep" x1="0%" y1="0%" x2="30%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="70%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="130" fill="url(#spotify-sweep)" pointer-events="none" rx="12">
+    <animate attributeName="x" from="-800" to="800" dur="7s" repeatCount="indefinite" />
+  </rect>
 </svg>
