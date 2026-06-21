@@ -240,7 +240,7 @@ I build interactive analytics applications to filter, slice, and draw insights f
 
 ## ⚡ Recent Activity
 <!--START_SECTION:activity-->
-- 🌿 Created branch `main` in [PritamPalit-official/Scaler-Clustering](https://github.com/PritamPalit-official/Scaler-Clustering)
+- No recent activity found.
 <!--END_SECTION:activity-->
 
 <br>
