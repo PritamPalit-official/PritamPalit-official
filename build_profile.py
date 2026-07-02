@@ -21,25 +21,23 @@ def download_and_encode(name, url):
         return ""
 
 def create_header():
-    svg_content = """<svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+    svg_content = """<svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
   <style>
     .background { fill: #080d16; rx: 12px; }
     .border { stroke: #30363d; stroke-width: 1.5; fill: none; rx: 12px; }
     .title {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-weight: 900;
-      font-size: 38px;
+      font-weight: 800;
+      font-size: 34px;
       fill: #ffffff;
-      letter-spacing: 6px;
-      text-shadow: 0px 0px 15px rgba(0, 240, 255, 0.5);
+      letter-spacing: 5px;
     }
     .subtitle {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-weight: 700;
       font-size: 11px;
       fill: #8b949e;
-      letter-spacing: 3px;
-      opacity: 0.8;
+      letter-spacing: 2px;
     }
     .hud-text {
       font-family: monospace;
@@ -57,78 +55,92 @@ def create_header():
     }
   </style>
 
-  <rect width="800" height="160" class="background" />
+  <rect width="800" height="180" class="background" />
   
-  <!-- Network Nodes Emblem (Replacing Radar) -->
-  <g transform="translate(60, 80)">
-    <circle r="30" fill="none" stroke="#30363d" stroke-width="1.5" />
-    <circle r="15" fill="none" stroke="#30363d" stroke-width="1" />
-    <line x1="-30" y1="0" x2="30" y2="0" stroke="#30363d" stroke-width="1" />
-    <line x1="0" y1="-30" x2="0" y2="30" stroke="#30363d" stroke-width="1" />
-    <circle cx="0" cy="0" r="5" fill="#58a6ff" />
-    <circle cx="21" cy="-21" r="3" fill="#238636" />
-    <circle cx="-21" cy="21" r="3" fill="#ffbd2e" />
-  </g>
-  <text x="60" y="142" class="hud-text" text-anchor="middle">[ SYS_ONLINE ]</text>
-
-  <!-- Telemetry Info (Left Panel) -->
-  <text x="130" y="50" class="hud-text">ROLE: DATA &amp; BI ENGINEER</text>
-  <text x="130" y="70" class="hud-text">LOC : KOLKATA, IN</text>
-  <text x="130" y="90" class="hud-text">STAT: ACTIVELY SEEKING</text>
-
-  <!-- Center Title & Subtitle -->
-  <text x="400" y="75" text-anchor="middle" class="title">PRITAM PALIT</text>
-  <text x="400" y="105" text-anchor="middle" class="subtitle">DATA SCIENTIST • BI ENGINEER • ML DEVELOPER</text>
-
-  <!-- Status indicators (Right Panel) -->
-  <g transform="translate(620, 40)">
-    <!-- Resource bars -->
-    <text x="0" y="10" class="hud-text">DATA_ENGINEERING: 90%</text>
-    <rect x="0" y="15" width="120" height="4" fill="#30363d" rx="2" />
-    <rect x="0" y="15" width="108" height="4" fill="#58a6ff" rx="2" />
+  <!-- Data Emblem (Abstract Analytical Cluster) -->
+  <g transform="translate(60, 90)">
+    <!-- Central Node Grid -->
+    <circle r="42" fill="none" stroke="#1f2937" stroke-width="1" />
+    <circle r="26" fill="none" stroke="#1f2937" stroke-dasharray="3, 3" stroke-width="1" />
     
-    <text x="0" y="32" class="hud-text">STATISTICAL_MODEL: 85%</text>
-    <rect x="0" y="37" width="120" height="4" fill="#30363d" rx="2" />
-    <rect x="0" y="37" width="102" height="4" fill="#58a6ff" rx="2" />
+    <!-- Connection lines -->
+    <line x1="-30" y1="10" x2="0" y2="-25" stroke="#58a6ff" stroke-width="1.5" opacity="0.6" />
+    <line x1="0" y1="-25" x2="30" y2="15" stroke="#58a6ff" stroke-width="1.5" opacity="0.6" />
+    <line x1="-30" y1="10" x2="30" y2="15" stroke="#30363d" stroke-width="1" stroke-dasharray="2, 2" />
+    
+    <!-- Nodes -->
+    <circle cx="0" cy="-25" r="5" fill="#00f0ff" />
+    <circle cx="-30" cy="10" r="4.5" fill="#58a6ff" />
+    <circle cx="30" cy="15" r="4.5" fill="#ffbd2e" />
+    
+    <circle cx="0" cy="0" r="1.5" fill="#8b949e" />
+  </g>
+  <text x="60" y="152" class="hud-text" text-anchor="middle">[ ANALYTICS ]</text>
 
-    <text x="0" y="54" class="hud-text">BI_ARCHITECTURE : 95%</text>
-    <rect x="0" y="59" width="120" height="4" fill="#30363d" rx="2" />
-    <rect x="0" y="59" width="114" height="4" fill="#ffbd2e" rx="2" />
+  <!-- Left Career Info / Badges -->
+  <g transform="translate(135, 0)">
+    <!-- Name -->
+    <text x="0" y="60" class="title">PRITAM PALIT</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="86" class="subtitle">DATA SCIENTIST • BI ENGINEER • ML DEVELOPER</text>
+    
+    <!-- Microsoft PL-300 Certification Badge -->
+    <g transform="translate(0, 108)">
+      <rect x="0" y="0" width="138" height="20" rx="10" fill="#ffbd2e" opacity="0.12" />
+      <rect x="0" y="0" width="138" height="20" rx="10" fill="none" stroke="#ffbd2e" stroke-width="0.8" />
+      <text x="69" y="13" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="bold" fill="#ffbd2e" text-anchor="middle">🏅 MICROSOFT PL-300</text>
+    </g>
+
+    <!-- Google Data Analytics Certification Badge -->
+    <g transform="translate(148, 108)">
+      <rect x="0" y="0" width="168" height="20" rx="10" fill="#58a6ff" opacity="0.12" />
+      <rect x="0" y="0" width="168" height="20" rx="10" fill="none" stroke="#58a6ff" stroke-width="0.8" />
+      <text x="84" y="13" font-family="-apple-system, sans-serif" font-size="8.5" font-weight="bold" fill="#58a6ff" text-anchor="middle">🏅 GOOGLE DATA ANALYTICS</text>
+    </g>
   </g>
-  
-  <!-- Glowing Pulse dot and Status -->
-  <g transform="translate(755, 30)">
-    <circle cx="0" cy="0" r="5" class="pulse-dot" />
-    <circle cx="0" cy="0" r="8" fill="none" stroke="#238636" stroke-width="1" opacity="0.5">
-      <animate attributeName="r" from="5" to="12" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="opacity" from="0.5" to="0" dur="2s" repeatCount="indefinite" />
-    </circle>
+
+  <!-- Right Telemetry Panel -->
+  <g transform="translate(635, 45)">
+    <text x="0" y="15" class="hud-text">LOC : KOLKATA, IN</text>
+    <text x="0" y="32" class="hud-text">LAT : 22.5726° N</text>
+    <text x="0" y="49" class="hud-text">LON : 88.3639° E</text>
+    <text x="0" y="66" class="hud-text">STAT: ACTIVELY SEEKING</text>
+    
+    <!-- Status Indicator -->
+    <g transform="translate(0, 85)">
+      <circle cx="5" cy="-3" r="4.5" class="pulse-dot" />
+      <circle cx="5" cy="-3" r="7" fill="none" stroke="#238636" stroke-width="1.2" opacity="0.5">
+        <animate attributeName="r" from="4.5" to="11" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" from="0.5" to="0" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="20" y="1" class="hud-text">SYS_ONLINE</text>
+    </g>
   </g>
-  <text x="740" y="33" class="hud-text" text-anchor="end">SYS_ONLINE</text>
-  
-  <!-- HUD Corner Brackets -->
-  <path d="M 10 20 L 20 20 M 10 20 L 10 30" stroke="#30363d" stroke-width="1.5" fill="none" />
-  <path d="M 790 20 L 780 20 M 790 20 L 790 30" stroke="#30363d" stroke-width="1.5" fill="none" />
-  <path d="M 10 140 L 20 140 M 10 140 L 10 130" stroke="#30363d" stroke-width="1.5" fill="none" />
-  <path d="M 790 140 L 780 140 M 790 140 L 790 130" stroke="#30363d" stroke-width="1.5" fill="none" />
+
+  <!-- Corner Brackets -->
+  <path d="M 10 15 L 20 15 M 10 15 L 10 25" stroke="#30363d" stroke-width="1.2" fill="none" />
+  <path d="M 790 15 L 780 15 M 790 15 L 790 25" stroke="#30363d" stroke-width="1.2" fill="none" />
+  <path d="M 10 165 L 20 165 M 10 165 L 10 155" stroke="#30363d" stroke-width="1.2" fill="none" />
+  <path d="M 790 165 L 780 165 M 790 165 L 790 155" stroke="#30363d" stroke-width="1.2" fill="none" />
 
   <!-- Stripe-Style Reflection Sweep -->
   <defs>
     <linearGradient id="header-sweep" x1="0%" y1="0%" x2="30%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0" />
       <stop offset="30%" stop-color="#ffffff" stop-opacity="0" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05" />
       <stop offset="70%" stop-color="#ffffff" stop-opacity="0" />
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <rect width="800" height="160" fill="url(#header-sweep)" pointer-events="none" rx="12">
-    <animate attributeName="x" from="-800" to="800" dur="8s" repeatCount="indefinite" />
+  <rect width="800" height="180" fill="url(#header-sweep)" pointer-events="none" rx="12">
+    <animate attributeName="x" from="-800" to="800" dur="9s" repeatCount="indefinite" />
   </rect>
 
-  <rect width="800" height="160" class="border" />
+  <rect width="800" height="180" class="border" />
 </svg>"""
-    
+
     with open(os.path.join(REPO_PATH, "header.svg"), "w", encoding="utf-8") as f:
         f.write(svg_content)
     print("Created header.svg")
@@ -669,5 +681,4 @@ if __name__ == "__main__":
     create_skills()
     create_skills_chart()
     create_methodologies()
-    create_about_me()
     create_experience()

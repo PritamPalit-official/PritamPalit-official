@@ -8,23 +8,16 @@
 <!-- Contact Badges -->
 <div align="center">
   <a href="https://www.linkedin.com/in/pritam-palit-77b2071b4/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;&nbsp;
   <a href="mailto:pritampalit02@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/PritamPalit-official">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
   </a>
-</div>
-
-<br>
-
-<!-- Mock Code Terminal Block -->
-<div align="center">
-  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/about_me.svg" width="800" alt="About Me Code Block" />
 </div>
 
 <br>
