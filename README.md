@@ -225,12 +225,7 @@ I build interactive analytics applications to filter, slice, and draw insights f
 
 
 
-## 🎧 Ambient Work Focus (Currently Listening to)
-<div align="center">
-  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/spotify_vibe.svg" width="800" alt="Ambient Work Focus" />
-</div>
 
-<br>
 
 ## 📈 GitHub Activity & Stats
 <div align="center">
