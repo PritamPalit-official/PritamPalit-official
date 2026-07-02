@@ -1,0 +1,116 @@
+<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card-group {
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-glow {
+      transition: opacity 0.3s ease;
+      opacity: 0;
+    }
+    .card-main {
+      transition: stroke 0.3s ease, fill 0.3s ease;
+    }
+    .card-group:hover {
+      transform: translateY(-6px);
+    }
+    .card-group:hover .card-glow {
+      opacity: 0.65;
+    }
+    .card-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      fill: #ffffff;
+    }
+    .card-desc {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 9px;
+      fill: #8b949e;
+    }
+    .card-icon {
+      font-size: 20px;
+    }
+    
+    .card-group.card-etl:hover .card-main { stroke: #2ECC71; }
+    .card-group.card-feature:hover .card-main { stroke: #00F0FF; }
+    .card-group.card-stats:hover .card-main { stroke: #9B59B6; }
+    .card-group.card-modeling:hover .card-main { stroke: #F39C12; }
+    .card-group.card-storytelling:hover .card-main { stroke: #E74C3C; }
+
+    .card-etl { transform-origin: 90px 57.5px; }
+    .card-feature { transform-origin: 245px 57.5px; }
+    .card-stats { transform-origin: 400px 57.5px; }
+    .card-modeling { transform-origin: 555px 57.5px; }
+    .card-storytelling { transform-origin: 710px 57.5px; }
+
+    /* CSS drop-shadow instead of SVG filter elements */
+    .glow-etl { filter: drop-shadow(0px 0px 8px #2ECC71); }
+    .glow-feature { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-stats { filter: drop-shadow(0px 0px 8px #9B59B6); }
+    .glow-modeling { filter: drop-shadow(0px 0px 8px #F39C12); }
+    .glow-storytelling { filter: drop-shadow(0px 0px 8px #E74C3C); }
+  </style>
+
+  <g class="card-group card-etl">
+    <!-- Glow layer -->
+    <rect x="22.5" y="20" width="135" height="75" rx="10" ry="10" fill="#2ECC71" class="card-glow glow-etl" />
+    <!-- Card Body -->
+    <rect x="22.5" y="20" width="135" height="75" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
+    <!-- Icon -->
+    <text x="37.5" y="55" class="card-icon">💾</text>
+    <!-- Title -->
+    <text x="37.5" y="72" class="card-title">ETL &amp; Pipelines</text>
+    <!-- Description -->
+    <text x="37.5" y="84" class="card-desc">SQL queries, schema design</text>
+  </g>
+  <g class="card-group card-feature">
+    <!-- Glow layer -->
+    <rect x="177.5" y="20" width="135" height="75" rx="10" ry="10" fill="#00F0FF" class="card-glow glow-feature" />
+    <!-- Card Body -->
+    <rect x="177.5" y="20" width="135" height="75" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
+    <!-- Icon -->
+    <text x="192.5" y="55" class="card-icon">⚙️</text>
+    <!-- Title -->
+    <text x="192.5" y="72" class="card-title">Feature Eng</text>
+    <!-- Description -->
+    <text x="192.5" y="84" class="card-desc">Capping, encoding, scaling</text>
+  </g>
+  <g class="card-group card-stats">
+    <!-- Glow layer -->
+    <rect x="332.5" y="20" width="135" height="75" rx="10" ry="10" fill="#9B59B6" class="card-glow glow-stats" />
+    <!-- Card Body -->
+    <rect x="332.5" y="20" width="135" height="75" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
+    <!-- Icon -->
+    <text x="347.5" y="55" class="card-icon">📊</text>
+    <!-- Title -->
+    <text x="347.5" y="72" class="card-title">Stats &amp; Inference</text>
+    <!-- Description -->
+    <text x="347.5" y="84" class="card-desc">A/B testing, hypothesis tests</text>
+  </g>
+  <g class="card-group card-modeling">
+    <!-- Glow layer -->
+    <rect x="487.5" y="20" width="135" height="75" rx="10" ry="10" fill="#F39C12" class="card-glow glow-modeling" />
+    <!-- Card Body -->
+    <rect x="487.5" y="20" width="135" height="75" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
+    <!-- Icon -->
+    <text x="502.5" y="55" class="card-icon">🧠</text>
+    <!-- Title -->
+    <text x="502.5" y="72" class="card-title">Predictive ML</text>
+    <!-- Description -->
+    <text x="502.5" y="84" class="card-desc">Regression, ensemble trees</text>
+  </g>
+  <g class="card-group card-storytelling">
+    <!-- Glow layer -->
+    <rect x="642.5" y="20" width="135" height="75" rx="10" ry="10" fill="#E74C3C" class="card-glow glow-storytelling" />
+    <!-- Card Body -->
+    <rect x="642.5" y="20" width="135" height="75" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
+    <!-- Icon -->
+    <text x="657.5" y="55" class="card-icon">🎨</text>
+    <!-- Title -->
+    <text x="657.5" y="72" class="card-title">BI Storytelling</text>
+    <!-- Description -->
+    <text x="657.5" y="84" class="card-desc">KPI mapping, dashboards</text>
+  </g>
+</svg>

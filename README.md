@@ -134,10 +134,10 @@
 
 <br>
 
-## 🧠 Soft Skills & Superpowers (Hover to explore!)
+## ⚙️ Core Technical Methodologies &amp; Best Practices (Hover to explore!)
 <div align="center">
-  <!-- Interactive Soft Skills Cards SVG -->
-  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/soft-skills.svg" width="800" alt="Soft Skills" />
+  <!-- Interactive Technical Methodologies Cards SVG -->
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/methodologies.svg" width="800" alt="Technical Methodologies" />
 </div>
 
 <br>
@@ -237,6 +237,19 @@ I build interactive analytics applications to filter, slice, and draw insights f
   <img src="https://github-readme-stats.vercel.app/api?username=PritamPalit-official&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="380" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PritamPalit-official&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" alt="Top Languages" width="380" />
 </div>
+
+<br>
+
+## 🛠️ Developer Utilities &amp; Workflows
+
+### 🚀 Git Conventional Commit CLI Helper
+To ensure high-quality, structured development and adhere to industry standard commit history guidelines, I write and maintain a custom interactive Python script in this repository:
+- **Script File**: [git_helper.py](git_helper.py)
+- **What it does**: Prompts for selecting standardized conventional types (`feat`, `fix`, `docs`, etc.), enforces scope/imperative messages, automates file staging, and executes safe `git commit` formatting.
+- **How to run**:
+  ```bash
+  python git_helper.py
+  ```
 
 <br>
 

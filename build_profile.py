@@ -386,13 +386,13 @@ def create_skills_chart():
         f.write(svg_content)
     print("Created skills-chart.svg")
 
-def create_soft_skills():
+def create_methodologies():
     skills = [
-        {"key": "adaptiveness", "name": "Adaptiveness", "color": "#2ECC71", "desc": "Quick learner &amp; resilient", "icon": "⚡"},
-        {"key": "strategy", "name": "Data Strategy", "color": "#00F0FF", "desc": "Business value alignment", "icon": "📈"},
-        {"key": "analytical", "name": "Analytical", "color": "#9B59B6", "desc": "Root cause data extraction", "icon": "🧠"},
-        {"key": "communication", "name": "Communication", "color": "#F39C12", "desc": "Clear team collaboration", "icon": "💬"},
-        {"key": "problem", "name": "Problem Solving", "color": "#E74C3C", "desc": "Analytical debug mindset", "icon": "🔍"}
+        {"key": "etl", "name": "ETL &amp; Pipelines", "color": "#2ECC71", "desc": "SQL queries, schema design", "icon": "💾"},
+        {"key": "feature", "name": "Feature Eng", "color": "#00F0FF", "desc": "Capping, encoding, scaling", "icon": "⚙️"},
+        {"key": "stats", "name": "Stats &amp; Inference", "color": "#9B59B6", "desc": "A/B testing, hypothesis tests", "icon": "📊"},
+        {"key": "modeling", "name": "Predictive ML", "color": "#F39C12", "desc": "Regression, ensemble trees", "icon": "🧠"},
+        {"key": "storytelling", "name": "BI Storytelling", "color": "#E74C3C", "desc": "KPI mapping, dashboards", "icon": "🎨"}
     ]
 
     svg_content = """<svg viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
@@ -430,24 +430,24 @@ def create_soft_skills():
       font-size: 20px;
     }
     
-    .card-group.card-adaptiveness:hover .card-main { stroke: #2ECC71; }
-    .card-group.card-strategy:hover .card-main { stroke: #00F0FF; }
-    .card-group.card-analytical:hover .card-main { stroke: #9B59B6; }
-    .card-group.card-communication:hover .card-main { stroke: #F39C12; }
-    .card-group.card-problem:hover .card-main { stroke: #E74C3C; }
+    .card-group.card-etl:hover .card-main { stroke: #2ECC71; }
+    .card-group.card-feature:hover .card-main { stroke: #00F0FF; }
+    .card-group.card-stats:hover .card-main { stroke: #9B59B6; }
+    .card-group.card-modeling:hover .card-main { stroke: #F39C12; }
+    .card-group.card-storytelling:hover .card-main { stroke: #E74C3C; }
 
-    .card-adaptiveness { transform-origin: 90px 57.5px; }
-    .card-strategy { transform-origin: 245px 57.5px; }
-    .card-analytical { transform-origin: 400px 57.5px; }
-    .card-communication { transform-origin: 555px 57.5px; }
-    .card-problem { transform-origin: 710px 57.5px; }
+    .card-etl { transform-origin: 90px 57.5px; }
+    .card-feature { transform-origin: 245px 57.5px; }
+    .card-stats { transform-origin: 400px 57.5px; }
+    .card-modeling { transform-origin: 555px 57.5px; }
+    .card-storytelling { transform-origin: 710px 57.5px; }
 
     /* CSS drop-shadow instead of SVG filter elements */
-    .glow-adaptiveness { filter: drop-shadow(0px 0px 8px #2ECC71); }
-    .glow-strategy { filter: drop-shadow(0px 0px 8px #00F0FF); }
-    .glow-analytical { filter: drop-shadow(0px 0px 8px #9B59B6); }
-    .glow-communication { filter: drop-shadow(0px 0px 8px #F39C12); }
-    .glow-problem { filter: drop-shadow(0px 0px 8px #E74C3C); }
+    .glow-etl { filter: drop-shadow(0px 0px 8px #2ECC71); }
+    .glow-feature { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-stats { filter: drop-shadow(0px 0px 8px #9B59B6); }
+    .glow-modeling { filter: drop-shadow(0px 0px 8px #F39C12); }
+    .glow-storytelling { filter: drop-shadow(0px 0px 8px #E74C3C); }
   </style>
 """
 
@@ -476,9 +476,10 @@ def create_soft_skills():
 
     svg_content += "\n</svg>"
 
-    with open(os.path.join(REPO_PATH, "soft-skills.svg"), "w", encoding="utf-8") as f:
+    os.makedirs(os.path.join(REPO_PATH, "assets"), exist_ok=True)
+    with open(os.path.join(REPO_PATH, "assets", "methodologies.svg"), "w", encoding="utf-8") as f:
         f.write(svg_content)
-    print("Created soft-skills.svg")
+    print("Created methodologies.svg")
 
 def create_about_me():
     svg_content = """<svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
@@ -667,6 +668,6 @@ if __name__ == "__main__":
     create_header()
     create_skills()
     create_skills_chart()
-    create_soft_skills()
+    create_methodologies()
     create_about_me()
     create_experience()
