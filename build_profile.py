@@ -74,7 +74,7 @@ def create_header():
   <!-- Telemetry Info (Left Panel) -->
   <text x="130" y="50" class="hud-text">ROLE: DATA &amp; BI ENGINEER</text>
   <text x="130" y="70" class="hud-text">LOC : KOLKATA, IN</text>
-  <text x="130" y="90" class="hud-text">STAT: ACTIVELY HIRING</text>
+  <text x="130" y="90" class="hud-text">STAT: ACTIVELY SEEKING</text>
 
   <!-- Center Title & Subtitle -->
   <text x="400" y="75" text-anchor="middle" class="title">PRITAM PALIT</text>
