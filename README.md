@@ -267,29 +267,73 @@ To ensure high-quality, structured development and adhere to industry standard c
 
 <br>
 
-## 🚀 Popular Repositories
-<div align="center">
-  <a href="https://github.com/PritamPalit-official/OLA-Ensemble-Learning">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=OLA-Ensemble-Learning&theme=radical&hide_border=true&bg_color=0D1117" alt="OLA Ensemble Learning" />
-  </a>
-  <a href="https://github.com/PritamPalit-official/Scaler-Clustering">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=Scaler-Clustering&theme=radical&hide_border=true&bg_color=0D1117" alt="Scaler Clustering" />
-  </a>
-  <br>
-  <a href="https://github.com/PritamPalit-official/Movie-Recommender-System">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=Movie-Recommender-System&theme=radical&hide_border=true&bg_color=0D1117" alt="Movie Recommender System" />
-  </a>
-  <a href="https://github.com/PritamPalit-official/LoanTap-Logistic-Regression">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=LoanTap-Logistic-Regression&theme=radical&hide_border=true&bg_color=0D1117" alt="LoanTap Logistic Regression" />
-  </a>
-  <br>
-  <a href="https://github.com/PritamPalit-official/TARGET_BUSINESS_CASE_STUDY">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=TARGET_BUSINESS_CASE_STUDY&theme=radical&hide_border=true&bg_color=0D1117" alt="Target SQL Case Study" />
-  </a>
-  <a href="https://github.com/PritamPalit-official/Delhivery-Feature-Engineering">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PritamPalit-official&repo=Delhivery-Feature-Engineering&theme=radical&hide_border=true&bg_color=0D1117" alt="Delhivery Feature Engineering" />
-  </a>
-</div>
+## 🚀 Featured Project Portfolio
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="30%" align="left">📌 Project</th>
+      <th width="30%" align="left">🛠️ Tech Stack</th>
+      <th width="40%" align="left">💡 Business Solution &amp; Impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b><a href="https://github.com/PritamPalit-official/OLA-Ensemble-Learning">OLA Driver Churn Prediction</a></b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/Ensemble_Learning-9B59B6?style=flat-square" alt="Ensemble Learning" />
+        <img src="https://img.shields.io/badge/SMOTE-2ECE71?style=flat-square" alt="SMOTE" />
+      </td>
+      <td>Predict monthly driver attrition using Random Forest &amp; Gradient Boosting classifiers to optimize driver retention programs.</td>
+    </tr>
+    <tr>
+      <td><b><a href="https://github.com/PritamPalit-official/Scaler-Clustering">Scaler Learner Segmentation</a></b></td>
+      <td>
+        <img src="https://img.shields.io/badge/K--Means-F39C12?style=flat-square" alt="K-Means" />
+        <img src="https://img.shields.io/badge/Unsupervised-1ABC9C?style=flat-square" alt="Unsupervised" />
+        <img src="https://img.shields.io/badge/PCA-34495E?style=flat-square" alt="PCA" />
+      </td>
+      <td>Segment tech learners by background, target CTC, and current jobs using K-Means clustering to recommend tailored upskilling curricula.</td>
+    </tr>
+    <tr>
+      <td><b><a href="https://github.com/PritamPalit-official/LoanTap-Logistic-Regression">LoanTap Credit Underwriting</a></b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Logistic_Regression-00F0FF?style=flat-square" alt="Logistic Regression" />
+        <img src="https://img.shields.io/badge/ROC_AUC-2980B9?style=flat-square" alt="ROC/AUC" />
+        <img src="https://img.shields.io/badge/Underwriting-E74C3C?style=flat-square" alt="Underwriting" />
+      </td>
+      <td>Determine applicant creditworthiness and defaults using logistic regression, evaluating risk thresholds for non-performing loans.</td>
+    </tr>
+    <tr>
+      <td><b><a href="https://github.com/PritamPalit-official/Movie-Recommender-System">Movie Recommender System</a></b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Cosine_Similarity-FF5733?style=flat-square" alt="Cosine Similarity" />
+        <img src="https://img.shields.io/badge/NLP_Text-27AE60?style=flat-square" alt="NLP" />
+        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
+      </td>
+      <td>A content-based recommendation engine built with TF-IDF, Cosine Similarity, and deployed on Streamlit for live user interactions.</td>
+    </tr>
+    <tr>
+      <td><b><a href="https://github.com/PritamPalit-official/TARGET_BUSINESS_CASE_STUDY">Target SQL Operations Analysis</a></b></td>
+      <td>
+        <img src="https://img.shields.io/badge/SQL-00758F?style=flat-square&logo=mysql&logoColor=white" alt="SQL" />
+        <img src="https://img.shields.io/badge/Google_BigQuery-669DF2?style=flat-square&logo=google-cloud&logoColor=white" alt="BigQuery" />
+        <img src="https://img.shields.io/badge/Operations-D35400?style=flat-square" alt="Operations" />
+      </td>
+      <td>Query and analyze e-commerce orders, delivery times, and freight costs across Brazil to improve order delivery logistics.</td>
+    </tr>
+    <tr>
+      <td><b><a href="https://github.com/PritamPalit-official/Delhivery-Feature-Engineering">Delhivery Feature Engineering</a></b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Feature_Engineering-238636?style=flat-square" alt="Feature Engineering" />
+        <img src="https://img.shields.io/badge/Outliers-C0392B?style=flat-square" alt="Outliers" />
+        <img src="https://img.shields.io/badge/Logistics-7F8C8D?style=flat-square" alt="Logistics" />
+      </td>
+      <td>Clean raw trip data, aggregate legs, engineer route efficiency features, and winsorize logistics telemetry for forecast model readiness.</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 
