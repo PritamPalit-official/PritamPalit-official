@@ -59,42 +59,41 @@ def create_header():
 
   <rect width="800" height="160" class="background" />
   
-  <!-- Radar Sweep -->
+  <!-- Network Nodes Emblem (Replacing Radar) -->
   <g transform="translate(60, 80)">
-    <circle r="40" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.15" />
-    <circle r="25" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.15" />
-    <circle r="10" fill="none" stroke="#58a6ff" stroke-width="1" opacity="0.1" />
-    <line x1="-40" y1="0" x2="40" y2="0" stroke="#58a6ff" stroke-width="0.5" opacity="0.1" />
-    <line x1="0" y1="-40" x2="0" y2="40" stroke="#58a6ff" stroke-width="0.5" opacity="0.1" />
-    <line x1="0" y1="0" x2="28" y2="-28" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
-      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite" />
-    </line>
+    <circle r="30" fill="none" stroke="#30363d" stroke-width="1.5" />
+    <circle r="15" fill="none" stroke="#30363d" stroke-width="1" />
+    <line x1="-30" y1="0" x2="30" y2="0" stroke="#30363d" stroke-width="1" />
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="#30363d" stroke-width="1" />
+    <circle cx="0" cy="0" r="5" fill="#58a6ff" />
+    <circle cx="21" cy="-21" r="3" fill="#238636" />
+    <circle cx="-21" cy="21" r="3" fill="#ffbd2e" />
   </g>
-  <text x="60" y="142" class="hud-text" text-anchor="middle">[ SCANNING ]</text>
+  <text x="60" y="142" class="hud-text" text-anchor="middle">[ SYS_ONLINE ]</text>
 
-  <!-- Coordinates & Info (Left Panel) -->
-  <text x="140" y="50" class="hud-text">SYS_LOC: KOLKATA, IN</text>
-  <text x="140" y="70" class="hud-text">LAT_N : 22.5726°</text>
-  <text x="140" y="90" class="hud-text">LON_E : 88.3639°</text>
+  <!-- Telemetry Info (Left Panel) -->
+  <text x="130" y="50" class="hud-text">ROLE: DATA &amp; BI ENGINEER</text>
+  <text x="130" y="70" class="hud-text">LOC : KOLKATA, IN</text>
+  <text x="130" y="90" class="hud-text">STAT: ACTIVELY HIRING</text>
 
   <!-- Center Title & Subtitle -->
   <text x="400" y="75" text-anchor="middle" class="title">PRITAM PALIT</text>
-  <text x="400" y="105" text-anchor="middle" class="subtitle">DATA SCIENTIST • AI ENGINEER • VIBE CODER</text>
+  <text x="400" y="105" text-anchor="middle" class="subtitle">DATA SCIENTIST • BI ENGINEER • ML DEVELOPER</text>
 
   <!-- Status indicators (Right Panel) -->
   <g transform="translate(620, 40)">
     <!-- Resource bars -->
-    <text x="0" y="10" class="hud-text">DATA_ANALYTICS: 90%</text>
+    <text x="0" y="10" class="hud-text">DATA_ENGINEERING: 90%</text>
     <rect x="0" y="15" width="120" height="4" fill="#30363d" rx="2" />
     <rect x="0" y="15" width="108" height="4" fill="#58a6ff" rx="2" />
     
-    <text x="0" y="32" class="hud-text">AI_PROMPTING  : 100%</text>
+    <text x="0" y="32" class="hud-text">STATISTICAL_MODEL: 85%</text>
     <rect x="0" y="37" width="120" height="4" fill="#30363d" rx="2" />
-    <rect x="0" y="37" width="120" height="4" fill="#58a6ff" rx="2" />
+    <rect x="0" y="37" width="102" height="4" fill="#58a6ff" rx="2" />
 
-    <text x="0" y="54" class="hud-text">VIBE_CODING   : 100%</text>
+    <text x="0" y="54" class="hud-text">BI_ARCHITECTURE : 95%</text>
     <rect x="0" y="59" width="120" height="4" fill="#30363d" rx="2" />
-    <rect x="0" y="59" width="120" height="4" fill="#ff007f" rx="2" />
+    <rect x="0" y="59" width="114" height="4" fill="#ffbd2e" rx="2" />
   </g>
   
   <!-- Glowing Pulse dot and Status -->
@@ -105,7 +104,7 @@ def create_header():
       <animate attributeName="opacity" from="0.5" to="0" dur="2s" repeatCount="indefinite" />
     </circle>
   </g>
-  <text x="740" y="33" class="hud-text" text-anchor="end">SYS_ACTIVE</text>
+  <text x="740" y="33" class="hud-text" text-anchor="end">SYS_ONLINE</text>
   
   <!-- HUD Corner Brackets -->
   <path d="M 10 20 L 20 20 M 10 20 L 10 30" stroke="#30363d" stroke-width="1.5" fill="none" />
@@ -225,12 +224,12 @@ def create_skills():
 def create_skills_chart():
     nodes = {
         "python": {"x": 400, "y": 210, "r": 48, "color": "#3776AB", "label": "Python", "icon": "🐍"},
-        "vibe": {"x": 400, "y": 60, "r": 30, "color": "#FF007F", "label": "Vibe Coding", "icon": "🎵"},
+        "data_eng": {"x": 400, "y": 60, "r": 30, "color": "#E67E22", "label": "Data Pipelines", "icon": "☁️"},
         "sql": {"x": 560, "y": 110, "r": 30, "color": "#F39C12", "label": "SQL &amp; DB", "icon": "💾"},
         "feature": {"x": 570, "y": 280, "r": 30, "color": "#2ECC71", "label": "Feature Eng", "icon": "⚙️"},
-        "prompting": {"x": 450, "y": 350, "r": 30, "color": "#00F0FF", "label": "AI Prompting", "icon": "🤖"},
+        "ai_eng": {"x": 450, "y": 350, "r": 30, "color": "#00F0FF", "label": "Generative AI", "icon": "🤖"},
         "stats": {"x": 350, "y": 350, "r": 30, "color": "#1abc9c", "label": "Statistics", "icon": "📊"},
-        "data_viz": {"x": 230, "y": 280, "r": 30, "color": "#E74C3C", "label": "Data Viz", "icon": "🎨"},
+        "data_viz": {"x": 230, "y": 280, "r": 30, "color": "#E74C3C", "label": "BI &amp; Viz", "icon": "🎨"},
         "ml": {"x": 240, "y": 110, "r": 30, "color": "#9B59B6", "label": "Machine Learning", "icon": "🧠"}
     }
 
@@ -277,10 +276,10 @@ def create_skills_chart():
       cursor: pointer;
     }
     .glow-python { filter: drop-shadow(0px 0px 8px #3776AB); }
-    .glow-vibe { filter: drop-shadow(0px 0px 8px #FF007F); }
+    .glow-data_eng { filter: drop-shadow(0px 0px 8px #E67E22); }
     .glow-sql { filter: drop-shadow(0px 0px 8px #F39C12); }
     .glow-feature { filter: drop-shadow(0px 0px 8px #2ECC71); }
-    .glow-prompting { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-ai_eng { filter: drop-shadow(0px 0px 8px #00F0FF); }
     .glow-stats { filter: drop-shadow(0px 0px 8px #1abc9c); }
     .glow-data_viz { filter: drop-shadow(0px 0px 8px #E74C3C); }
     .glow-ml { filter: drop-shadow(0px 0px 8px #9B59B6); }
@@ -331,10 +330,10 @@ def create_skills_chart():
 
     # Write nodes
     satellites = {
-        "vibe": 4.0,
+        "data_eng": 4.0,
         "sql": 5.5,
         "feature": 3.2,
-        "prompting": 6.8,
+        "ai_eng": 6.8,
         "stats": 4.5,
         "data_viz": 5.0,
         "ml": 3.8
@@ -347,40 +346,19 @@ def create_skills_chart():
   <g class="node-group">
 """
         if key == "python":
-            # Central Node visual styling
-            svg_content += f"""    <!-- Outer rotating scanner ring -->
-    <circle cx="{x}" cy="{y}" r="58" fill="none" stroke="{color}" stroke-dasharray="10, 5" stroke-width="1.5">
-      <animateTransform attributeName="transform" type="rotate" from="0 {x} {y}" to="360 {x} {y}" dur="20s" repeatCount="indefinite" />
-    </circle>
-    <!-- Node Body -->
-    <circle cx="{x}" cy="{y}" r="{r + 5}" fill="{color}" opacity="0.25" class="glow-python" />
+            svg_content += f"""    <!-- Node Body -->
+    <circle cx="{x}" cy="{y}" r="{r + 5}" fill="{color}" opacity="0.2" class="glow-python" />
     <circle cx="{x}" cy="{y}" r="{r}" fill="#0d1117" stroke="{color}" stroke-width="2.5" />
     <text x="{x}" y="{y + 5}" text-anchor="middle" class="center-text">{label.upper()}</text>
   </g>
 """
         else:
-            sat_dur = satellites.get(key, 4.0)
-            # HUD corner brackets for outer nodes
-            svg_content += f"""    <!-- HUD brackets -->
-    <path d="M {x-22} {y-30} L {x-30} {y-30} L {x-30} {y-22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M {x+22} {y-30} L {x+30} {y-30} L {x+30} {y-22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M {x-22} {y+30} L {x-30} {y+30} L {x-30} {y+22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M {x+22} {y+30} L {x+30} {y+30} L {x+30} {y+22}" stroke="{color}" stroke-width="1.2" fill="none" opacity="0.6" />
-    <!-- Rotating dash ring -->
-    <circle cx="{x}" cy="{y}" r="35" fill="none" stroke="{color}" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="0 {x} {y}" to="-360 {x} {y}" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Orbiting Satellite Moon -->
-    <g transform="translate({x}, {y})">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="{color}" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
-      <circle cx="42" cy="0" r="3.5" fill="{color}" filter="url(#glow-{key})">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="{sat_dur}s" repeatCount="indefinite" />
-      </circle>
-    </g>
+            svg_content += f"""    <!-- Outer Ring border -->
+    <circle cx="{x}" cy="{y}" r="35" fill="none" stroke="{color}" stroke-width="1" opacity="0.25" />
     <!-- Node Body -->
-    <circle cx="{x}" cy="{y}" r="{r + 3}" fill="{color}" opacity="0.15" class="glow-{key}" />
+    <circle cx="{x}" cy="{y}" r="{r + 3}" fill="{color}" opacity="0.1" class="glow-{key}" />
     <circle cx="{x}" cy="{y}" r="{r}" fill="#0d1117" stroke="{color}" stroke-width="1.5" />
-    <circle cx="{x}" cy="{y}" r="{r - 4}" fill="{color}" opacity="0.08" />
+    <circle cx="{x}" cy="{y}" r="{r - 4}" fill="{color}" opacity="0.05" />
     <!-- Icon Inside circle -->
     <text x="{x}" y="{y + 7}" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">{icon}</text>
     <!-- Label -->
@@ -411,8 +389,8 @@ def create_skills_chart():
 def create_soft_skills():
     skills = [
         {"key": "adaptiveness", "name": "Adaptiveness", "color": "#2ECC71", "desc": "Quick learner &amp; resilient", "icon": "⚡"},
-        {"key": "prompting", "name": "Prompting", "color": "#00F0FF", "desc": "AI system orchestration", "icon": "🤖"},
-        {"key": "vibe", "name": "Vibe Coding", "color": "#FF007F", "desc": "Coding in flow state", "icon": "🎵"},
+        {"key": "strategy", "name": "Data Strategy", "color": "#00F0FF", "desc": "Business value alignment", "icon": "📈"},
+        {"key": "analytical", "name": "Analytical", "color": "#9B59B6", "desc": "Root cause data extraction", "icon": "🧠"},
         {"key": "communication", "name": "Communication", "color": "#F39C12", "desc": "Clear team collaboration", "icon": "💬"},
         {"key": "problem", "name": "Problem Solving", "color": "#E74C3C", "desc": "Analytical debug mindset", "icon": "🔍"}
     ]
@@ -453,21 +431,21 @@ def create_soft_skills():
     }
     
     .card-group.card-adaptiveness:hover .card-main { stroke: #2ECC71; }
-    .card-group.card-prompting:hover .card-main { stroke: #00F0FF; }
-    .card-group.card-vibe:hover .card-main { stroke: #FF007F; }
+    .card-group.card-strategy:hover .card-main { stroke: #00F0FF; }
+    .card-group.card-analytical:hover .card-main { stroke: #9B59B6; }
     .card-group.card-communication:hover .card-main { stroke: #F39C12; }
     .card-group.card-problem:hover .card-main { stroke: #E74C3C; }
 
     .card-adaptiveness { transform-origin: 90px 57.5px; }
-    .card-prompting { transform-origin: 245px 57.5px; }
-    .card-vibe { transform-origin: 400px 57.5px; }
+    .card-strategy { transform-origin: 245px 57.5px; }
+    .card-analytical { transform-origin: 400px 57.5px; }
     .card-communication { transform-origin: 555px 57.5px; }
     .card-problem { transform-origin: 710px 57.5px; }
 
     /* CSS drop-shadow instead of SVG filter elements */
     .glow-adaptiveness { filter: drop-shadow(0px 0px 8px #2ECC71); }
-    .glow-prompting { filter: drop-shadow(0px 0px 8px #00F0FF); }
-    .glow-vibe { filter: drop-shadow(0px 0px 8px #FF007F); }
+    .glow-strategy { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-analytical { filter: drop-shadow(0px 0px 8px #9B59B6); }
     .glow-communication { filter: drop-shadow(0px 0px 8px #F39C12); }
     .glow-problem { filter: drop-shadow(0px 0px 8px #E74C3C); }
   </style>

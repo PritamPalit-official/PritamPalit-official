@@ -34,21 +34,21 @@
     }
     
     .card-group.card-adaptiveness:hover .card-main { stroke: #2ECC71; }
-    .card-group.card-prompting:hover .card-main { stroke: #00F0FF; }
-    .card-group.card-vibe:hover .card-main { stroke: #FF007F; }
+    .card-group.card-strategy:hover .card-main { stroke: #00F0FF; }
+    .card-group.card-analytical:hover .card-main { stroke: #9B59B6; }
     .card-group.card-communication:hover .card-main { stroke: #F39C12; }
     .card-group.card-problem:hover .card-main { stroke: #E74C3C; }
 
     .card-adaptiveness { transform-origin: 90px 57.5px; }
-    .card-prompting { transform-origin: 245px 57.5px; }
-    .card-vibe { transform-origin: 400px 57.5px; }
+    .card-strategy { transform-origin: 245px 57.5px; }
+    .card-analytical { transform-origin: 400px 57.5px; }
     .card-communication { transform-origin: 555px 57.5px; }
     .card-problem { transform-origin: 710px 57.5px; }
 
     /* CSS drop-shadow instead of SVG filter elements */
     .glow-adaptiveness { filter: drop-shadow(0px 0px 8px #2ECC71); }
-    .glow-prompting { filter: drop-shadow(0px 0px 8px #00F0FF); }
-    .glow-vibe { filter: drop-shadow(0px 0px 8px #FF007F); }
+    .glow-strategy { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-analytical { filter: drop-shadow(0px 0px 8px #9B59B6); }
     .glow-communication { filter: drop-shadow(0px 0px 8px #F39C12); }
     .glow-problem { filter: drop-shadow(0px 0px 8px #E74C3C); }
   </style>
@@ -65,29 +65,29 @@
     <!-- Description -->
     <text x="37.5" y="84" class="card-desc">Quick learner &amp; resilient</text>
   </g>
-  <g class="card-group card-prompting">
+  <g class="card-group card-strategy">
     <!-- Glow layer -->
-    <rect x="177.5" y="20" width="135" height="75" rx="10" ry="10" fill="#00F0FF" class="card-glow glow-prompting" />
+    <rect x="177.5" y="20" width="135" height="75" rx="10" ry="10" fill="#00F0FF" class="card-glow glow-strategy" />
     <!-- Card Body -->
     <rect x="177.5" y="20" width="135" height="75" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
     <!-- Icon -->
-    <text x="192.5" y="55" class="card-icon">🤖</text>
+    <text x="192.5" y="55" class="card-icon">📈</text>
     <!-- Title -->
-    <text x="192.5" y="72" class="card-title">Prompting</text>
+    <text x="192.5" y="72" class="card-title">Data Strategy</text>
     <!-- Description -->
-    <text x="192.5" y="84" class="card-desc">AI system orchestration</text>
+    <text x="192.5" y="84" class="card-desc">Business value alignment</text>
   </g>
-  <g class="card-group card-vibe">
+  <g class="card-group card-analytical">
     <!-- Glow layer -->
-    <rect x="332.5" y="20" width="135" height="75" rx="10" ry="10" fill="#FF007F" class="card-glow glow-vibe" />
+    <rect x="332.5" y="20" width="135" height="75" rx="10" ry="10" fill="#9B59B6" class="card-glow glow-analytical" />
     <!-- Card Body -->
     <rect x="332.5" y="20" width="135" height="75" rx="10" ry="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5" class="card-main" />
     <!-- Icon -->
-    <text x="347.5" y="55" class="card-icon">🎵</text>
+    <text x="347.5" y="55" class="card-icon">🧠</text>
     <!-- Title -->
-    <text x="347.5" y="72" class="card-title">Vibe Coding</text>
+    <text x="347.5" y="72" class="card-title">Analytical</text>
     <!-- Description -->
-    <text x="347.5" y="84" class="card-desc">Coding in flow state</text>
+    <text x="347.5" y="84" class="card-desc">Root cause data extraction</text>
   </g>
   <g class="card-group card-communication">
     <!-- Glow layer -->

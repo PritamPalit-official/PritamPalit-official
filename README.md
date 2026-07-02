@@ -1,9 +1,6 @@
 <!-- Greeting & Header -->
 <div align="center">
   <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/header.svg" width="800" alt="Pritam Palit" />
-  
-  <!-- Subtitle Typing SVG -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00A896&center=true&vCenter=true&width=800&lines=Transforming%20Data%20into%20Actionable%20Insights%20%F0%9F%92%A1;Building%20Intelligent%20AI%20Systems%20%F0%9F%92%BB;Welcome%20to%20my%20Interactive%20Profile!%20%F0%9F%9A%80" alt="Typing SVG" />
 </div>
 
 <br>
@@ -28,13 +25,6 @@
 <!-- Mock Code Terminal Block -->
 <div align="center">
   <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/about_me.svg" width="800" alt="About Me Code Block" />
-</div>
-
-<br>
-
-<!-- Dynamic Quote Card -->
-<div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Quote of the Day" width="800" />
 </div>
 
 <br>
@@ -235,9 +225,9 @@ I build interactive analytics applications to filter, slice, and draw insights f
 
 
 
-## 🎵 My Coding Vibe (Currently Listening to)
+## 🎧 Ambient Work Focus (Currently Listening to)
 <div align="center">
-  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/spotify_vibe.svg" width="800" alt="My Coding Vibe" />
+  <img src="https://raw.githubusercontent.com/PritamPalit-official/PritamPalit-official/main/assets/spotify_vibe.svg" width="800" alt="Ambient Work Focus" />
 </div>
 
 <br>

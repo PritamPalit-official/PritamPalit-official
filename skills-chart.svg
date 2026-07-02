@@ -41,10 +41,10 @@
       cursor: pointer;
     }
     .glow-python { filter: drop-shadow(0px 0px 8px #3776AB); }
-    .glow-vibe { filter: drop-shadow(0px 0px 8px #FF007F); }
+    .glow-data_eng { filter: drop-shadow(0px 0px 8px #E67E22); }
     .glow-sql { filter: drop-shadow(0px 0px 8px #F39C12); }
     .glow-feature { filter: drop-shadow(0px 0px 8px #2ECC71); }
-    .glow-prompting { filter: drop-shadow(0px 0px 8px #00F0FF); }
+    .glow-ai_eng { filter: drop-shadow(0px 0px 8px #00F0FF); }
     .glow-stats { filter: drop-shadow(0px 0px 8px #1abc9c); }
     .glow-data_viz { filter: drop-shadow(0px 0px 8px #E74C3C); }
     .glow-ml { filter: drop-shadow(0px 0px 8px #9B59B6); }
@@ -64,7 +64,7 @@
 
   <!-- Connection Lines -->
   <g>
-    <line x1="400" y1="210" x2="400" y2="60" stroke="#FF007F" class="connection" />
+    <line x1="400" y1="210" x2="400" y2="60" stroke="#E67E22" class="connection" />
     <line x1="400" y1="210" x2="560" y2="110" stroke="#F39C12" class="connection" />
     <line x1="400" y1="210" x2="570" y2="280" stroke="#2ECC71" class="connection" />
     <line x1="400" y1="210" x2="450" y2="350" stroke="#00F0FF" class="connection" />
@@ -75,11 +75,11 @@
 
   <!-- Animated Data Packets -->
   <g>
-    <circle r="3" fill="#FF007F" opacity="0.8">
+    <circle r="3" fill="#E67E22" opacity="0.8">
       <animate attributeName="cx" from="400" to="400" dur="2.5s" begin="0s" repeatCount="indefinite" />
       <animate attributeName="cy" from="210" to="60" dur="2.5s" begin="0s" repeatCount="indefinite" />
     </circle>
-    <circle r="3" fill="#FF007F" opacity="0.8">
+    <circle r="3" fill="#E67E22" opacity="0.8">
       <animate attributeName="cx" from="400" to="400" dur="2.5s" begin="1.25s" repeatCount="indefinite" />
       <animate attributeName="cy" from="210" to="60" dur="2.5s" begin="1.25s" repeatCount="indefinite" />
     </circle>
@@ -136,64 +136,32 @@
   <!-- Skill Nodes -->
   <!-- Node: Python -->
   <g class="node-group">
-    <!-- Outer rotating scanner ring -->
-    <circle cx="400" cy="210" r="58" fill="none" stroke="#3776AB" stroke-dasharray="10, 5" stroke-width="1.5">
-      <animateTransform attributeName="transform" type="rotate" from="0 400 210" to="360 400 210" dur="20s" repeatCount="indefinite" />
-    </circle>
     <!-- Node Body -->
-    <circle cx="400" cy="210" r="53" fill="#3776AB" opacity="0.25" class="glow-python" />
+    <circle cx="400" cy="210" r="53" fill="#3776AB" opacity="0.2" class="glow-python" />
     <circle cx="400" cy="210" r="48" fill="#0d1117" stroke="#3776AB" stroke-width="2.5" />
     <text x="400" y="215" text-anchor="middle" class="center-text">PYTHON</text>
   </g>
-  <!-- Node: Vibe Coding -->
+  <!-- Node: Data Pipelines -->
   <g class="node-group">
-    <!-- HUD brackets -->
-    <path d="M 378 30 L 370 30 L 370 38" stroke="#FF007F" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 422 30 L 430 30 L 430 38" stroke="#FF007F" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 378 90 L 370 90 L 370 82" stroke="#FF007F" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 422 90 L 430 90 L 430 82" stroke="#FF007F" stroke-width="1.2" fill="none" opacity="0.6" />
-    <!-- Rotating dash ring -->
-    <circle cx="400" cy="60" r="35" fill="none" stroke="#FF007F" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="0 400 60" to="-360 400 60" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Orbiting Satellite Moon -->
-    <g transform="translate(400, 60)">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#FF007F" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
-      <circle cx="42" cy="0" r="3.5" fill="#FF007F" filter="url(#glow-vibe)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4.0s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <!-- Outer Ring border -->
+    <circle cx="400" cy="60" r="35" fill="none" stroke="#E67E22" stroke-width="1" opacity="0.25" />
     <!-- Node Body -->
-    <circle cx="400" cy="60" r="33" fill="#FF007F" opacity="0.15" class="glow-vibe" />
-    <circle cx="400" cy="60" r="30" fill="#0d1117" stroke="#FF007F" stroke-width="1.5" />
-    <circle cx="400" cy="60" r="26" fill="#FF007F" opacity="0.08" />
+    <circle cx="400" cy="60" r="33" fill="#E67E22" opacity="0.1" class="glow-data_eng" />
+    <circle cx="400" cy="60" r="30" fill="#0d1117" stroke="#E67E22" stroke-width="1.5" />
+    <circle cx="400" cy="60" r="26" fill="#E67E22" opacity="0.05" />
     <!-- Icon Inside circle -->
-    <text x="400" y="67" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">🎵</text>
+    <text x="400" y="67" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">☁️</text>
     <!-- Label -->
-    <text x="400" y="18" text-anchor="middle" class="label-text">Vibe Coding</text>
+    <text x="400" y="18" text-anchor="middle" class="label-text">Data Pipelines</text>
   </g>
   <!-- Node: SQL &amp; DB -->
   <g class="node-group">
-    <!-- HUD brackets -->
-    <path d="M 538 80 L 530 80 L 530 88" stroke="#F39C12" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 582 80 L 590 80 L 590 88" stroke="#F39C12" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 538 140 L 530 140 L 530 132" stroke="#F39C12" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 582 140 L 590 140 L 590 132" stroke="#F39C12" stroke-width="1.2" fill="none" opacity="0.6" />
-    <!-- Rotating dash ring -->
-    <circle cx="560" cy="110" r="35" fill="none" stroke="#F39C12" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="0 560 110" to="-360 560 110" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Orbiting Satellite Moon -->
-    <g transform="translate(560, 110)">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#F39C12" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
-      <circle cx="42" cy="0" r="3.5" fill="#F39C12" filter="url(#glow-sql)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="5.5s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <!-- Outer Ring border -->
+    <circle cx="560" cy="110" r="35" fill="none" stroke="#F39C12" stroke-width="1" opacity="0.25" />
     <!-- Node Body -->
-    <circle cx="560" cy="110" r="33" fill="#F39C12" opacity="0.15" class="glow-sql" />
+    <circle cx="560" cy="110" r="33" fill="#F39C12" opacity="0.1" class="glow-sql" />
     <circle cx="560" cy="110" r="30" fill="#0d1117" stroke="#F39C12" stroke-width="1.5" />
-    <circle cx="560" cy="110" r="26" fill="#F39C12" opacity="0.08" />
+    <circle cx="560" cy="110" r="26" fill="#F39C12" opacity="0.05" />
     <!-- Icon Inside circle -->
     <text x="560" y="117" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">💾</text>
     <!-- Label -->
@@ -201,134 +169,64 @@
   </g>
   <!-- Node: Feature Eng -->
   <g class="node-group">
-    <!-- HUD brackets -->
-    <path d="M 548 250 L 540 250 L 540 258" stroke="#2ECC71" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 592 250 L 600 250 L 600 258" stroke="#2ECC71" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 548 310 L 540 310 L 540 302" stroke="#2ECC71" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 592 310 L 600 310 L 600 302" stroke="#2ECC71" stroke-width="1.2" fill="none" opacity="0.6" />
-    <!-- Rotating dash ring -->
-    <circle cx="570" cy="280" r="35" fill="none" stroke="#2ECC71" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="0 570 280" to="-360 570 280" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Orbiting Satellite Moon -->
-    <g transform="translate(570, 280)">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#2ECC71" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
-      <circle cx="42" cy="0" r="3.5" fill="#2ECC71" filter="url(#glow-feature)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="3.2s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <!-- Outer Ring border -->
+    <circle cx="570" cy="280" r="35" fill="none" stroke="#2ECC71" stroke-width="1" opacity="0.25" />
     <!-- Node Body -->
-    <circle cx="570" cy="280" r="33" fill="#2ECC71" opacity="0.15" class="glow-feature" />
+    <circle cx="570" cy="280" r="33" fill="#2ECC71" opacity="0.1" class="glow-feature" />
     <circle cx="570" cy="280" r="30" fill="#0d1117" stroke="#2ECC71" stroke-width="1.5" />
-    <circle cx="570" cy="280" r="26" fill="#2ECC71" opacity="0.08" />
+    <circle cx="570" cy="280" r="26" fill="#2ECC71" opacity="0.05" />
     <!-- Icon Inside circle -->
     <text x="570" y="287" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">⚙️</text>
     <!-- Label -->
     <text x="570" y="332" text-anchor="middle" class="label-text">Feature Eng</text>
   </g>
-  <!-- Node: AI Prompting -->
+  <!-- Node: Generative AI -->
   <g class="node-group">
-    <!-- HUD brackets -->
-    <path d="M 428 320 L 420 320 L 420 328" stroke="#00F0FF" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 472 320 L 480 320 L 480 328" stroke="#00F0FF" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 428 380 L 420 380 L 420 372" stroke="#00F0FF" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 472 380 L 480 380 L 480 372" stroke="#00F0FF" stroke-width="1.2" fill="none" opacity="0.6" />
-    <!-- Rotating dash ring -->
-    <circle cx="450" cy="350" r="35" fill="none" stroke="#00F0FF" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="0 450 350" to="-360 450 350" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Orbiting Satellite Moon -->
-    <g transform="translate(450, 350)">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#00F0FF" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
-      <circle cx="42" cy="0" r="3.5" fill="#00F0FF" filter="url(#glow-prompting)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="6.8s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <!-- Outer Ring border -->
+    <circle cx="450" cy="350" r="35" fill="none" stroke="#00F0FF" stroke-width="1" opacity="0.25" />
     <!-- Node Body -->
-    <circle cx="450" cy="350" r="33" fill="#00F0FF" opacity="0.15" class="glow-prompting" />
+    <circle cx="450" cy="350" r="33" fill="#00F0FF" opacity="0.1" class="glow-ai_eng" />
     <circle cx="450" cy="350" r="30" fill="#0d1117" stroke="#00F0FF" stroke-width="1.5" />
-    <circle cx="450" cy="350" r="26" fill="#00F0FF" opacity="0.08" />
+    <circle cx="450" cy="350" r="26" fill="#00F0FF" opacity="0.05" />
     <!-- Icon Inside circle -->
     <text x="450" y="357" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">🤖</text>
     <!-- Label -->
-    <text x="450" y="402" text-anchor="middle" class="label-text">AI Prompting</text>
+    <text x="450" y="402" text-anchor="middle" class="label-text">Generative AI</text>
   </g>
   <!-- Node: Statistics -->
   <g class="node-group">
-    <!-- HUD brackets -->
-    <path d="M 328 320 L 320 320 L 320 328" stroke="#1abc9c" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 372 320 L 380 320 L 380 328" stroke="#1abc9c" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 328 380 L 320 380 L 320 372" stroke="#1abc9c" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 372 380 L 380 380 L 380 372" stroke="#1abc9c" stroke-width="1.2" fill="none" opacity="0.6" />
-    <!-- Rotating dash ring -->
-    <circle cx="350" cy="350" r="35" fill="none" stroke="#1abc9c" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="0 350 350" to="-360 350 350" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Orbiting Satellite Moon -->
-    <g transform="translate(350, 350)">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#1abc9c" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
-      <circle cx="42" cy="0" r="3.5" fill="#1abc9c" filter="url(#glow-stats)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4.5s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <!-- Outer Ring border -->
+    <circle cx="350" cy="350" r="35" fill="none" stroke="#1abc9c" stroke-width="1" opacity="0.25" />
     <!-- Node Body -->
-    <circle cx="350" cy="350" r="33" fill="#1abc9c" opacity="0.15" class="glow-stats" />
+    <circle cx="350" cy="350" r="33" fill="#1abc9c" opacity="0.1" class="glow-stats" />
     <circle cx="350" cy="350" r="30" fill="#0d1117" stroke="#1abc9c" stroke-width="1.5" />
-    <circle cx="350" cy="350" r="26" fill="#1abc9c" opacity="0.08" />
+    <circle cx="350" cy="350" r="26" fill="#1abc9c" opacity="0.05" />
     <!-- Icon Inside circle -->
     <text x="350" y="357" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">📊</text>
     <!-- Label -->
     <text x="350" y="402" text-anchor="middle" class="label-text">Statistics</text>
   </g>
-  <!-- Node: Data Viz -->
+  <!-- Node: BI &amp; Viz -->
   <g class="node-group">
-    <!-- HUD brackets -->
-    <path d="M 208 250 L 200 250 L 200 258" stroke="#E74C3C" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 252 250 L 260 250 L 260 258" stroke="#E74C3C" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 208 310 L 200 310 L 200 302" stroke="#E74C3C" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 252 310 L 260 310 L 260 302" stroke="#E74C3C" stroke-width="1.2" fill="none" opacity="0.6" />
-    <!-- Rotating dash ring -->
-    <circle cx="230" cy="280" r="35" fill="none" stroke="#E74C3C" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="0 230 280" to="-360 230 280" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Orbiting Satellite Moon -->
-    <g transform="translate(230, 280)">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#E74C3C" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
-      <circle cx="42" cy="0" r="3.5" fill="#E74C3C" filter="url(#glow-data_viz)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="5.0s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <!-- Outer Ring border -->
+    <circle cx="230" cy="280" r="35" fill="none" stroke="#E74C3C" stroke-width="1" opacity="0.25" />
     <!-- Node Body -->
-    <circle cx="230" cy="280" r="33" fill="#E74C3C" opacity="0.15" class="glow-data_viz" />
+    <circle cx="230" cy="280" r="33" fill="#E74C3C" opacity="0.1" class="glow-data_viz" />
     <circle cx="230" cy="280" r="30" fill="#0d1117" stroke="#E74C3C" stroke-width="1.5" />
-    <circle cx="230" cy="280" r="26" fill="#E74C3C" opacity="0.08" />
+    <circle cx="230" cy="280" r="26" fill="#E74C3C" opacity="0.05" />
     <!-- Icon Inside circle -->
     <text x="230" y="287" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">🎨</text>
     <!-- Label -->
-    <text x="230" y="332" text-anchor="middle" class="label-text">Data Viz</text>
+    <text x="230" y="332" text-anchor="middle" class="label-text">BI &amp; Viz</text>
   </g>
   <!-- Node: Machine Learning -->
   <g class="node-group">
-    <!-- HUD brackets -->
-    <path d="M 218 80 L 210 80 L 210 88" stroke="#9B59B6" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 262 80 L 270 80 L 270 88" stroke="#9B59B6" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 218 140 L 210 140 L 210 132" stroke="#9B59B6" stroke-width="1.2" fill="none" opacity="0.6" />
-    <path d="M 262 140 L 270 140 L 270 132" stroke="#9B59B6" stroke-width="1.2" fill="none" opacity="0.6" />
-    <!-- Rotating dash ring -->
-    <circle cx="240" cy="110" r="35" fill="none" stroke="#9B59B6" stroke-dasharray="6, 4" stroke-width="1" opacity="0.8">
-      <animateTransform attributeName="transform" type="rotate" from="0 240 110" to="-360 240 110" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <!-- Orbiting Satellite Moon -->
-    <g transform="translate(240, 110)">
-      <circle cx="0" cy="0" r="42" fill="none" stroke="#9B59B6" stroke-width="0.5" stroke-dasharray="2, 6" opacity="0.3" />
-      <circle cx="42" cy="0" r="3.5" fill="#9B59B6" filter="url(#glow-ml)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="3.8s" repeatCount="indefinite" />
-      </circle>
-    </g>
+    <!-- Outer Ring border -->
+    <circle cx="240" cy="110" r="35" fill="none" stroke="#9B59B6" stroke-width="1" opacity="0.25" />
     <!-- Node Body -->
-    <circle cx="240" cy="110" r="33" fill="#9B59B6" opacity="0.15" class="glow-ml" />
+    <circle cx="240" cy="110" r="33" fill="#9B59B6" opacity="0.1" class="glow-ml" />
     <circle cx="240" cy="110" r="30" fill="#0d1117" stroke="#9B59B6" stroke-width="1.5" />
-    <circle cx="240" cy="110" r="26" fill="#9B59B6" opacity="0.08" />
+    <circle cx="240" cy="110" r="26" fill="#9B59B6" opacity="0.05" />
     <!-- Icon Inside circle -->
     <text x="240" y="117" text-anchor="middle" font-size="18" font-family="-apple-system, BlinkMacSystemFont, sans-serif">🧠</text>
     <!-- Label -->
