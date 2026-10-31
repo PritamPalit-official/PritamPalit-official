@@ -243,7 +243,7 @@ To ensure high-quality, structured development and adhere to industry standard c
 
 ## ⚡ Recent Activity
 <!--START_SECTION:activity-->
-- 🌿 Created branch `main` in [PritamPalit-official/insurer-monitor](https://github.com/PritamPalit-official/insurer-monitor)
+- No recent activity found.
 <!--END_SECTION:activity-->
 
 <br>
