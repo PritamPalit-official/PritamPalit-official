@@ -23,7 +23,7 @@
 <br>
 
 <p align="center">
-  <b>A Passionate Data Analyst & Business Analyst with hands-on experience in sales analytics, customer profiling, and statistical modeling. Dedicated to reducing operational reporting time and delivering data-driven business intelligence.</b>
+  <b>Data Analyst | Business Analyst | MIS Analyst with 1+ year of combined professional experience in KPI dashboards, business reporting, SQL, and statistical analysis across BFSI, e-commerce, and digital business environments.</b>
 </p>
 
 ---
@@ -40,15 +40,12 @@
   <summary><b>🔍 View Plain Text Resume Details (Recruiter Friendly)</b></summary>
   <br>
 
-#### 🏢 **Sales & Data Analyst Intern** @ **HDFC Life Insurance** *(Jan 2024 – Oct 2024)*
-- 📊 **Automated Excel KPI dashboards** using Pivot Tables and Power Query, reducing reporting cycles by **30%** and saving **5+ hours per week**.
-- 🔍 **Segmented customer transaction records (10,000+)** using SQL to identify 3 high-value lead targets, increasing qualification rates by **12%**.
-- 🛠️ **Developed self-service dashboards**, cutting ad-hoc reporting requests by **40%** for 20+ stakeholders.
+#### 🏢 **Sales & Data Analyst** @ **HDFC Life** *(Jan 2024 – Oct 2024)*
+- 📊 **Automated Excel-based KPI dashboards** using Pivot Tables and Power Query, analyzing retention data across 4 regional teams and reducing KPI reporting time by **30%**.
+- 🔍 **Analyzed and synthesized 10,000+ sales and customer records** to identify 3 high-value lead segments, translating findings into actionable insights that increased lead qualification by **12%** and reduced ad-hoc reporting requests by **30%**.
 
 #### 🏢 **Social Media & Data Analyst Intern** @ **Coding Ninjas** *(Jun 2022 – Dec 2022)*
-- 📈 **Boosted audience engagement by 20%** via analytics-driven content optimization and metrics analysis.
-- 🧪 **Executed A/B test campaigns**, raising click-through rates (**CTR**) by **15%** and reducing cost-per-acquisition (**CPA**) by **10%**.
-- 📋 **Built weekly tracker reports** covering 8 key performance indicators to optimize 5 concurrent digital campaigns.
+- 📈 **Analyzed campaign performance and conducted A/B testing** across 12+ campaigns, using data-driven insights to improve digital engagement by **20%**, increase CTR by **15%**, and reduce CPA by **10%**.
 
 </details>
 
@@ -183,7 +180,7 @@ I build interactive analytics applications to filter, slice, and draw insights f
 <br>
 
 ## 🎓 Education & Certifications
-- 🏫 **B.Tech in Electronics & Communication Engineering** — JIS College of Engineering *(2020 – 2024)*
+- 🏫 **B.Tech in Electronics & Communication Engineering** — JIS College of Engineering, Kalyani, West Bengal *(2020 – 2024)*
 - 🏅 **Google Data Analytics Professional Certificate** — Coursera
 - 🏅 **SQL for Data Science** — DataCamp
 - 🏅 **Excel for Data Analysis** — Udemy
@@ -268,22 +265,31 @@ To ensure high-quality, structured development and adhere to industry standard c
   </thead>
   <tbody>
     <tr>
-      <td><b><a href="https://github.com/PritamPalit-official/OLA-Ensemble-Learning">OLA Driver Churn Prediction</a></b></td>
+      <td><b><a href="https://github.com/PritamPalit-official/mandi-price-monitor">Fresh-Produce Price-Risk Monitor</a></b></td>
       <td>
         <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-        <img src="https://img.shields.io/badge/Ensemble_Learning-9B59B6?style=flat-square" alt="Ensemble Learning" />
-        <img src="https://img.shields.io/badge/SMOTE-2ECE71?style=flat-square" alt="SMOTE" />
+        <img src="https://img.shields.io/badge/DuckDB_SQL-FFF000?style=flat-square&logo=duckdb&logoColor=black" alt="DuckDB" />
+        <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI" />
       </td>
-      <td>Predict monthly driver attrition using Random Forest &amp; Gradient Boosting classifiers to optimize driver retention programs.</td>
+      <td>Engineered chunked streaming ETL validating 150k+ APMC records into 105k+ market-days; authored 8 SQL window views and 5-page Power BI procurement decision dashboard.</td>
     </tr>
     <tr>
-      <td><b><a href="https://github.com/PritamPalit-official/Scaler-Clustering">Scaler Learner Segmentation</a></b></td>
+      <td><b><a href="https://github.com/PritamPalit-official/TARGET_BUSINESS_CASE_STUDY">Target Brazil E-Commerce Analytics</a></b></td>
       <td>
-        <img src="https://img.shields.io/badge/K--Means-F39C12?style=flat-square" alt="K-Means" />
-        <img src="https://img.shields.io/badge/Unsupervised-1ABC9C?style=flat-square" alt="Unsupervised" />
-        <img src="https://img.shields.io/badge/PCA-34495E?style=flat-square" alt="PCA" />
+        <img src="https://img.shields.io/badge/SQL-00758F?style=flat-square&logo=mysql&logoColor=white" alt="SQL" />
+        <img src="https://img.shields.io/badge/Google_BigQuery-669DF2?style=flat-square&logo=google-cloud&logoColor=white" alt="BigQuery" />
+        <img src="https://img.shields.io/badge/Operations-D35400?style=flat-square" alt="Operations" />
       </td>
-      <td>Segment tech learners by background, target CTC, and current jobs using K-Means clustering to recommend tailored upskilling curricula.</td>
+      <td>Analyzed 100,000+ e-commerce orders across Brazil using SQL CTEs &amp; window functions. Optimized BigQuery queries, reducing runtime by 65% and improving SLA by 12%.</td>
+    </tr>
+    <tr>
+      <td><b><a href="https://github.com/PritamPalit-official/Yulu-Bike_Sharing_BUSINESS_CASE_STUDY">Yulu E-Bike Demand Analysis</a></b></td>
+      <td>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+        <img src="https://img.shields.io/badge/A%2FB_Testing-2ECC71?style=flat-square" alt="A/B Testing" />
+        <img src="https://img.shields.io/badge/Hypothesis_Testing-9B59B6?style=flat-square" alt="Hypothesis Testing" />
+      </td>
+      <td>Built hypothesis-testing sandbox (T-Test, ANOVA, Chi-Square, Tukey HSD) to explain ~35% of e-bike rental demand variance across weather and seasonality patterns.</td>
     </tr>
     <tr>
       <td><b><a href="https://github.com/PritamPalit-official/LoanTap-Logistic-Regression">LoanTap Credit Underwriting</a></b></td>
@@ -292,7 +298,7 @@ To ensure high-quality, structured development and adhere to industry standard c
         <img src="https://img.shields.io/badge/ROC_AUC-2980B9?style=flat-square" alt="ROC/AUC" />
         <img src="https://img.shields.io/badge/Underwriting-E74C3C?style=flat-square" alt="Underwriting" />
       </td>
-      <td>Determine applicant creditworthiness and defaults using logistic regression, evaluating risk thresholds for non-performing loans.</td>
+      <td>Developed logistic regression model to assess applicant creditworthiness and defaults, evaluating ROC-AUC thresholds to optimize risk vs. creditworthiness.</td>
     </tr>
     <tr>
       <td><b><a href="https://github.com/PritamPalit-official/Movie-Recommender-System">Movie Recommender System</a></b></td>
@@ -301,16 +307,7 @@ To ensure high-quality, structured development and adhere to industry standard c
         <img src="https://img.shields.io/badge/NLP_Text-27AE60?style=flat-square" alt="NLP" />
         <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
       </td>
-      <td>A content-based recommendation engine built with TF-IDF, Cosine Similarity, and deployed on Streamlit for live user interactions.</td>
-    </tr>
-    <tr>
-      <td><b><a href="https://github.com/PritamPalit-official/TARGET_BUSINESS_CASE_STUDY">Target SQL Operations Analysis</a></b></td>
-      <td>
-        <img src="https://img.shields.io/badge/SQL-00758F?style=flat-square&logo=mysql&logoColor=white" alt="SQL" />
-        <img src="https://img.shields.io/badge/Google_BigQuery-669DF2?style=flat-square&logo=google-cloud&logoColor=white" alt="BigQuery" />
-        <img src="https://img.shields.io/badge/Operations-D35400?style=flat-square" alt="Operations" />
-      </td>
-      <td>Query and analyze e-commerce orders, delivery times, and freight costs across Brazil to improve order delivery logistics.</td>
+      <td>Built content-based recommendation engine using TF-IDF and Cosine Similarity, deployed as an interactive Streamlit web application.</td>
     </tr>
     <tr>
       <td><b><a href="https://github.com/PritamPalit-official/Delhivery-Feature-Engineering">Delhivery Feature Engineering</a></b></td>

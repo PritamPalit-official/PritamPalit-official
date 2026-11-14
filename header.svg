@@ -60,7 +60,7 @@
     <text x="0" y="60" class="title">PRITAM PALIT</text>
     
     <!-- Subtitle -->
-    <text x="0" y="86" class="subtitle">DATA SCIENTIST • BI ENGINEER • ML DEVELOPER</text>
+    <text x="0" y="86" class="subtitle">DATA ANALYST • BUSINESS ANALYST • MIS ANALYST</text>
     
     <!-- Microsoft PL-300 Certification Badge -->
     <g transform="translate(0, 108)">
@@ -79,9 +79,9 @@
 
   <!-- Right Telemetry Panel -->
   <g transform="translate(635, 45)">
-    <text x="0" y="15" class="hud-text">LOC : KOLKATA, IN</text>
-    <text x="0" y="32" class="hud-text">LAT : 22.5726° N</text>
-    <text x="0" y="49" class="hud-text">LON : 88.3639° E</text>
+    <text x="0" y="15" class="hud-text">LOC : BANGALORE, IN</text>
+    <text x="0" y="32" class="hud-text">LAT : 12.8452° N</text>
+    <text x="0" y="49" class="hud-text">LON : 77.6602° E</text>
     <text x="0" y="66" class="hud-text">STAT: ACTIVELY SEEKING</text>
     
     <!-- Status Indicator -->

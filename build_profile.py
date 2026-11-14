@@ -4,7 +4,7 @@ import base64
 import os
 
 # Define output path
-REPO_PATH = r"C:\Users\prita\.gemini\antigravity\scratch\PritamPalit-official"
+REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 
 def download_and_encode(name, url):
     try:
@@ -83,7 +83,7 @@ def create_header():
     <text x="0" y="60" class="title">PRITAM PALIT</text>
     
     <!-- Subtitle -->
-    <text x="0" y="86" class="subtitle">DATA SCIENTIST • BI ENGINEER • ML DEVELOPER</text>
+    <text x="0" y="86" class="subtitle">DATA ANALYST • BUSINESS ANALYST • MIS ANALYST</text>
     
     <!-- Microsoft PL-300 Certification Badge -->
     <g transform="translate(0, 108)">
@@ -102,9 +102,9 @@ def create_header():
 
   <!-- Right Telemetry Panel -->
   <g transform="translate(635, 45)">
-    <text x="0" y="15" class="hud-text">LOC : KOLKATA, IN</text>
-    <text x="0" y="32" class="hud-text">LAT : 22.5726° N</text>
-    <text x="0" y="49" class="hud-text">LON : 88.3639° E</text>
+    <text x="0" y="15" class="hud-text">LOC : BANGALORE, IN</text>
+    <text x="0" y="32" class="hud-text">LAT : 12.8452° N</text>
+    <text x="0" y="49" class="hud-text">LON : 77.6602° E</text>
     <text x="0" y="66" class="hud-text">STAT: ACTIVELY SEEKING</text>
     
     <!-- Status Indicator -->
@@ -540,13 +540,13 @@ def create_about_me():
   <text x="60" y="60" class="text"><tspan class="keyword">class</tspan> <tspan class="class-name">PritamPalit</tspan>:</text>
   <text x="60" y="80" class="text">    <tspan class="keyword">def</tspan> <tspan class="function-name">__init__</tspan>(<tspan class="self">self</tspan>):</text>
   <text x="60" y="100" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">name</tspan> = <tspan class="string">"Pritam Palit"</tspan></text>
-  <text x="60" y="120" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">role</tspan> = <tspan class="string">"Data Analyst &amp; Business Analyst"</tspan></text>
-  <text x="60" y="140" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">location</tspan> = <tspan class="string">"Kolkata, India"</tspan></text>
+  <text x="60" y="120" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">role</tspan> = <tspan class="string">"Data Analyst | Business Analyst | MIS Analyst"</tspan></text>
+  <text x="60" y="140" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">location</tspan> = <tspan class="string">"Electronic City Phase 1, Bangalore, Karnataka - 560100"</tspan></text>
   <text x="60" y="160" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">experience</tspan> = {</text>
-  <text x="60" y="180" class="text">            <tspan class="string">"HDFC Life"</tspan>: <tspan class="string">"Sales &amp; Data Analyst Intern (Jan 24 - Oct 24)"</tspan>,</text>
+  <text x="60" y="180" class="text">            <tspan class="string">"HDFC Life"</tspan>: <tspan class="string">"Sales &amp; Data Analyst (Jan 24 - Oct 24)"</tspan>,</text>
   <text x="60" y="200" class="text">            <tspan class="string">"Coding Ninjas"</tspan>: <tspan class="string">"Social Media &amp; Data Analyst Intern (Jun 22 - Dec 22)"</tspan></text>
   <text x="60" y="220" class="text">        }</text>
-  <text x="60" y="240" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">education</tspan> = <tspan class="string">"B.Tech in Electronics &amp; Communication Eng (2020-2024)"</tspan></text>
+  <text x="60" y="240" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">education</tspan> = <tspan class="string">"B.Tech in Electronics &amp; Communication Eng | JIS College of Eng, Kalyani (2020-2024)"</tspan></text>
   <text x="60" y="260" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">certifications</tspan> = [</text>
   <text x="60" y="280" class="text">            <tspan class="string">"Google Data Analytics"</tspan>, <tspan class="string">"Microsoft Power BI (PL-300)"</tspan>, <tspan class="string">"Scaler DSML (In Progress)"</tspan></text>
   <text x="60" y="300" class="text">        ]</text>
@@ -609,24 +609,24 @@ def create_experience():
     <rect x="25" y="30" width="360" height="260" fill="none" stroke="#58a6ff" stroke-width="2" rx="10" opacity="0.15" />
     <rect x="25" y="30" width="360" height="260" class="card" />
     
-    <text x="45" y="60" class="card-title">Sales &amp; Data Analyst Intern</text>
-    <text x="45" y="78" class="card-sub" fill="#58a6ff">HDFC Life Insurance • Jan - Oct 2024</text>
+    <text x="45" y="60" class="card-title">Sales &amp; Data Analyst</text>
+    <text x="45" y="78" class="card-sub" fill="#58a6ff">HDFC Life • Jan - Oct 2024</text>
     
-    <rect x="45" y="90" width="110" height="18" rx="4" fill="#238636" opacity="0.2" />
-    <rect x="45" y="90" width="110" height="18" rx="4" fill="none" stroke="#238636" stroke-width="0.8" />
-    <text x="100" y="102" class="badge" fill="#39d353" text-anchor="middle">⏱️ SAVED 5+ HRS/WK</text>
+    <rect x="45" y="90" width="125" height="18" rx="4" fill="#238636" opacity="0.2" />
+    <rect x="45" y="90" width="125" height="18" rx="4" fill="none" stroke="#238636" stroke-width="0.8" />
+    <text x="107" y="102" class="badge" fill="#39d353" text-anchor="middle">⏱️ REPORTING TIME -30%</text>
     
     <circle cx="50" cy="132" r="2.5" fill="#58a6ff" />
-    <text x="60" y="135" class="card-text">Automated Excel dashboards via Power Query, reducing</text>
-    <text x="60" y="150" class="card-text">reporting cycles by <tspan fill="#58a6ff" class="metric">30%</tspan> and saving <tspan fill="#39d353" class="metric">5+ hours/week</tspan>.</text>
+    <text x="60" y="135" class="card-text">Automated Excel-based KPI dashboards using Power Query,</text>
+    <text x="60" y="150" class="card-text">analyzing 4 regional teams &amp; cutting KPI reporting time by <tspan fill="#58a6ff" class="metric">30%</tspan>.</text>
     
     <circle cx="50" cy="182" r="2.5" fill="#58a6ff" />
-    <text x="60" y="185" class="card-text">Segmented <tspan fill="#58a6ff" class="metric">10,000+</tspan> customer transaction records using SQL,</text>
-    <text x="60" y="200" class="card-text">increasing lead qualification rates by <tspan fill="#58a6ff" class="metric">12%</tspan>.</text>
+    <text x="60" y="185" class="card-text">Synthesized <tspan fill="#58a6ff" class="metric">10,000+</tspan> sales &amp; customer records to identify 3</text>
+    <text x="60" y="200" class="card-text">high-value lead segments, boosting qualification by <tspan fill="#58a6ff" class="metric">12%</tspan>.</text>
     
     <circle cx="50" cy="232" r="2.5" fill="#58a6ff" />
-    <text x="60" y="235" class="card-text">Developed self-service dashboards, cutting ad-hoc</text>
-    <text x="60" y="250" class="card-text">reporting requests by <tspan fill="#58a6ff" class="metric">40%</tspan> for <tspan fill="#58a6ff" class="metric">20+</tspan> stakeholders.</text>
+    <text x="60" y="235" class="card-text">Translated findings into actionable business insights,</text>
+    <text x="60" y="250" class="card-text">reducing ad-hoc reporting requests by <tspan fill="#58a6ff" class="metric">30%</tspan>.</text>
   </g>
 
   <!-- Right Card: Coding Ninjas -->
@@ -642,16 +642,16 @@ def create_experience():
     <text x="490" y="102" class="badge" fill="#f85149" text-anchor="middle">📈 ENGAGEMENT +20%</text>
     
     <circle cx="440" cy="132" r="2.5" fill="#ff7b72" />
-    <text x="450" y="135" class="card-text">Boosted audience engagement by <tspan fill="#ff7b72" class="metric">20%</tspan> via analytics-driven</text>
-    <text x="450" y="150" class="card-text">content optimization and metrics analysis.</text>
+    <text x="450" y="135" class="card-text">Analyzed performance &amp; conducted A/B testing across</text>
+    <text x="450" y="150" class="card-text"><tspan fill="#ff7b72" class="metric">12+ campaigns</tspan> using data-driven insights.</text>
     
     <circle cx="440" cy="182" r="2.5" fill="#ff7b72" />
-    <text x="450" y="185" class="card-text">Executed A/B test campaigns, raising click-through rates</text>
-    <text x="450" y="200" class="card-text">(<tspan fill="#ff7b72" class="metric">CTR</tspan>) by <tspan fill="#ff7b72" class="metric">15%</tspan> and reducing CPA by <tspan fill="#ff7b72" class="metric">10%</tspan>.</text>
+    <text x="450" y="185" class="card-text">Improved digital engagement by <tspan fill="#ff7b72" class="metric">20%</tspan> and raised</text>
+    <text x="450" y="200" class="card-text">click-through rates (<tspan fill="#ff7b72" class="metric">CTR</tspan>) by <tspan fill="#ff7b72" class="metric">15%</tspan>.</text>
     
     <circle cx="440" cy="232" r="2.5" fill="#ff7b72" />
-    <text x="450" y="235" class="card-text">Built weekly tracker reports covering <tspan fill="#ff7b72" class="metric">8 key KPIs</tspan></text>
-    <text x="450" y="250" class="card-text">to optimize 5 concurrent digital campaigns.</text>
+    <text x="450" y="235" class="card-text">Optimized campaign targeting efficiency to reduce Cost</text>
+    <text x="450" y="250" class="card-text">Per Acquisition (<tspan fill="#ff7b72" class="metric">CPA</tspan>) by <tspan fill="#ff7b72" class="metric">10%</tspan>.</text>
   </g>
 
   <!-- Stripe-Style Reflection Sweep -->
