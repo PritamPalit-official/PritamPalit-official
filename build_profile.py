@@ -543,7 +543,7 @@ def create_about_me():
   <text x="60" y="120" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">role</tspan> = <tspan class="string">"Data Analyst &amp; Business Analyst"</tspan></text>
   <text x="60" y="140" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">location</tspan> = <tspan class="string">"Kolkata, India"</tspan></text>
   <text x="60" y="160" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">experience</tspan> = {</text>
-  <text x="60" y="180" class="text">            <tspan class="string">"HDFC Life"</tspan>: <tspan class="string">"Sales &amp; Data Analyst Intern (Jan 24 - Aug 24)"</tspan>,</text>
+  <text x="60" y="180" class="text">            <tspan class="string">"HDFC Life"</tspan>: <tspan class="string">"Sales &amp; Data Analyst Intern (Jan 24 - Oct 24)"</tspan>,</text>
   <text x="60" y="200" class="text">            <tspan class="string">"Coding Ninjas"</tspan>: <tspan class="string">"Social Media &amp; Data Analyst Intern (Jun 22 - Dec 22)"</tspan></text>
   <text x="60" y="220" class="text">        }</text>
   <text x="60" y="240" class="text">        <tspan class="self">self</tspan>.<tspan class="variable">education</tspan> = <tspan class="string">"B.Tech in Electronics &amp; Communication Eng (2020-2024)"</tspan></text>
@@ -610,7 +610,7 @@ def create_experience():
     <rect x="25" y="30" width="360" height="260" class="card" />
     
     <text x="45" y="60" class="card-title">Sales &amp; Data Analyst Intern</text>
-    <text x="45" y="78" class="card-sub" fill="#58a6ff">HDFC Life Insurance • Jan - Aug 2024</text>
+    <text x="45" y="78" class="card-sub" fill="#58a6ff">HDFC Life Insurance • Jan - Oct 2024</text>
     
     <rect x="45" y="90" width="110" height="18" rx="4" fill="#238636" opacity="0.2" />
     <rect x="45" y="90" width="110" height="18" rx="4" fill="none" stroke="#238636" stroke-width="0.8" />

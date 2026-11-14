@@ -40,7 +40,7 @@
   <summary><b>🔍 View Plain Text Resume Details (Recruiter Friendly)</b></summary>
   <br>
 
-#### 🏢 **Sales & Data Analyst Intern** @ **HDFC Life Insurance** *(Jan 2024 – Aug 2024)*
+#### 🏢 **Sales & Data Analyst Intern** @ **HDFC Life Insurance** *(Jan 2024 – Oct 2024)*
 - 📊 **Automated Excel KPI dashboards** using Pivot Tables and Power Query, reducing reporting cycles by **30%** and saving **5+ hours per week**.
 - 🔍 **Segmented customer transaction records (10,000+)** using SQL to identify 3 high-value lead targets, increasing qualification rates by **12%**.
 - 🛠️ **Developed self-service dashboards**, cutting ad-hoc reporting requests by **40%** for 20+ stakeholders.
