@@ -240,8 +240,7 @@ To ensure high-quality, structured development and adhere to industry standard c
 
 ## ⚡ Recent Activity
 <!--START_SECTION:activity-->
-- 🌿 Created branch `master` in [PritamPalit-official/Mandi-Price-Monitor](https://github.com/PritamPalit-official/Mandi-Price-Monitor)
-- 🌿 Created branch `main` in [PritamPalit-official/Insurer-Monitor](https://github.com/PritamPalit-official/Insurer-Monitor)
+- No recent activity found.
 <!--END_SECTION:activity-->
 
 <br>
